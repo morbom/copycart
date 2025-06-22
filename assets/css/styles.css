@@ -29,6 +29,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -38,6 +40,7 @@
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --blur-xs: 4px;
     --blur-md: 12px;
     --default-transition-duration: 150ms;
@@ -375,6 +378,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -478,6 +484,10 @@
   .size-\[50px\] {
     width: 50px;
     height: 50px;
+  }
+  .size-\[70px\] {
+    width: 70px;
+    height: 70px;
   }
   .size-\[72px\] {
     width: 72px;
@@ -701,6 +711,9 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -747,8 +760,17 @@
   .border-\[\#0E0D0D1A\] {
     border-color: #0E0D0D1A;
   }
+  .border-\[\#0000000D\] {
+    border-color: #0000000D;
+  }
   .border-\[\#D9D9D9\] {
     border-color: #D9D9D9;
+  }
+  .border-\[\#F05A60\] {
+    border-color: #F05A60;
+  }
+  .border-\[\#F6888E4D\] {
+    border-color: #F6888E4D;
   }
   .border-brand-red {
     border-color: var(--color-brand-red);
@@ -783,8 +805,14 @@
   .bg-\[\#7878801F\] {
     background-color: #7878801F;
   }
+  .bg-\[\#BBBBBB\] {
+    background-color: #BBBBBB;
+  }
   .bg-\[\#D9D9D9\] {
     background-color: #D9D9D9;
+  }
+  .bg-\[\#F5F4F5\] {
+    background-color: #F5F4F5;
   }
   .bg-\[\#F6888E4D\] {
     background-color: #F6888E4D;
@@ -794,6 +822,9 @@
   }
   .bg-\[\#FAFAFA66\] {
     background-color: #FAFAFA66;
+  }
+  .bg-\[\#FAFAFA\] {
+    background-color: #FAFAFA;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -890,6 +921,9 @@
   }
   .px-11 {
     padding-inline: calc(var(--spacing) * 11);
+  }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
@@ -990,6 +1024,10 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
