@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycart</title>
+  <link href="./../assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center px-5 gap-2">
+  <div class="grid grid-cols-3 items-center p-5 absolute top-0 left-0 w-full">
+    <div>
+      <div class="bg-gray-100 rounded-full size-7 flex items-center justify-center">
+        <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+      </div>
+    </div>
+    <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+      Add Closet Item
+    </div>
+  </div>
+
+  <p class="max-w-56 text-xl font-medium text-center">
+    <span>Your Instagram account</span>
+    <span class="text-brand-red">not connected</span>
+  </p>
+  <div class="w-full">
+    <p>Insert Post URL</p>
+  </div>
+  <div class="relative w-full">
+    <input type="text" placeholder="Insert Post URL"
+      class="w-full pl-10 pr-4 py-2 border border-brand-red bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
+      id="search" />
+    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+      <img src="./../assets/icons/search.svg" alt="search">
+    </span>
+  </div>
+  <div class="px-4 w-full -mt-2">
+    <p class="text-brand-red text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+  </div>
+  <p class="text-center">or</p>
+  <button class="bg-black text-white rounded-full w-full py-2">Connect your Instagram Account</button>
+</body>
+
+</html>
