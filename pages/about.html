@@ -58,7 +58,7 @@
         destinations.
       </p>
       <div class="mt-4 flex justify-center items-center gap-2">
-        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white">
+        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white" id="add-link">
           + Add Link
         </button>
       </div>
@@ -79,7 +79,7 @@
           <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
           <p class="max-w-56">Dune: Prophecy | Official Trailer - Power | Max</p>
         </div>
-        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
+        <div><button class="edit-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex justify-between border-t-2 py-[10px]">
@@ -88,7 +88,7 @@
           <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
           <p class="max-w-56 truncate">Ewan Mitchell & Tom Glynn-Carney React To House of the Dr...</p>
         </div>
-        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
+        <div><button class="edit-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex justify-between border-t-2 py-[10px]">
@@ -96,7 +96,7 @@
           <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
           <p class="max-w-56 ml-4">Dune: Prophecy | Official Trailer - Power | Max</p>
         </div>
-        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
+        <div><button class="edit-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex flex-col gap-2 border-t-2 py-[10px]">
@@ -182,11 +182,11 @@
       </button>
     </div>
 
-    <!-- ------------------ Add Link Modal ------------------ -->
-    <div id="add-link-modal"
+    <!-- ------------------ Edit Link Modal ------------------ -->
+    <div id="edit-link-modal"
       class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
       <div class="grid bg-white rounded-lg shadow-lg w-full max-w-md px-2.5 py-5 relative">
-        <button id="close-modal-btn" class="absolute top-6 right-3">
+        <button id="close-edit-link-modal-btn" class="absolute top-6 right-3">
           <img src="./../assets/icons/close.svg" alt="close">
         </button>
         <p class="text-lg mb-4 text-center">Edit Link</p>
@@ -197,9 +197,9 @@
             </div>
             <div class="flex justify-between w-full">
               <p class="text-[#0E0D0D80]">Your Title goes here</p>
-              <button id="toggle-switch"
+              <button id="toggle-switch-edit"
                 class="relative inline-flex h-5 w-10 items-center rounded-full bg-gray-300 transition-colors focus:outline-none mt-1">
-                <span id="switch-knob"
+                <span id="switch-knob-edit"
                   class="inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform"></span>
               </button>
             </div>
@@ -213,6 +213,37 @@
         </button>
         <button class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full mt-5">
           Delete
+        </button>
+      </div>
+    </div>
+
+    <!-- ------------------ Add Link Modal ------------------ -->
+    <div id="add-link-modal"
+      class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
+      <div class="grid bg-white rounded-lg shadow-lg w-full max-w-md px-2.5 py-5 relative">
+        <button id="close-add-link-modal-btn" class="absolute top-6 right-3">
+          <img src="./../assets/icons/close.svg" alt="close">
+        </button>
+        <p class="text-lg mb-4 text-center">Add Link</p>
+        <div class="flex flex-col gap-2 rounded bg-[#0E0D0D0D] border border-[#0E0D0D1A] p-2.5 pt-5">
+          <div class="flex gap-5">
+            <div class="bg-[#D9D9D9] rounded flex items-center justify-center size-[72px]">
+              <img src="./../assets/icons/placeholder.svg" class="size-7" alt="placeholder">
+            </div>
+            <div class="flex justify-between w-full">
+              <p class="text-[#0E0D0D80]">Your Title goes here</p>
+              <button id="toggle-switch-add"
+                class="relative inline-flex h-5 w-10 items-center rounded-full bg-gray-300 transition-colors focus:outline-none mt-1">
+                <span id="switch-knob-add"
+                  class="inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform"></span>
+              </button>
+            </div>
+          </div>
+          <input type="text" class="rounded-full py-2 bg-[#D9D9D9] placeholder:text-[#0E0D0D80] px-6"
+            placeholder="Insert URL" />
+        </div>
+        <button class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full mt-5">
+          Save
         </button>
       </div>
     </div>
@@ -339,27 +370,49 @@
   </nav>
 
   <script>
-    /* ------------------ Add Link Modal ------------------ */
-    const addLinkBtns = document.querySelectorAll('.add-link-btn');
-    const modal = document.getElementById('add-link-modal');
-    const closeModalBtn = document.getElementById('close-modal-btn');
+    /* ------------------ Edit Link Modal ------------------ */
+    const editLinkBtns = document.querySelectorAll('.edit-link-btn');
+    const editLinkModal = document.getElementById('edit-link-modal');
+    const closeEditLinkModalBtn = document.getElementById('close-edit-link-modal-btn');
 
-    addLinkBtns.forEach(btn => {
+    editLinkBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
+        editLinkModal.classList.remove('hidden');
+        editLinkModal.classList.add('flex');
       });
     });
 
-    closeModalBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
+    closeEditLinkModalBtn.addEventListener('click', () => {
+      editLinkModal.classList.add('hidden');
+      editLinkModal.classList.remove('flex');
     });
 
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.add('hidden');
-        modal.classList.remove('flex');
+    editLinkModal.addEventListener('click', (e) => {
+      if (e.target === editLinkModal) {
+        editLinkModal.classList.add('hidden');
+        editLinkModal.classList.remove('flex');
+      }
+    });
+
+    /* ------------------ Add Link Modal ------------------ */
+    const addLinkBtn = document.getElementById('add-link');
+    const addLinkModal = document.getElementById('add-link-modal');
+    const closeAddLinkModalBtn = document.getElementById('close-add-link-modal-btn');
+
+    addLinkBtn.addEventListener('click', () => {
+      addLinkModal.classList.remove('hidden');
+      addLinkModal.classList.add('flex');
+    });
+
+    closeAddLinkModalBtn.addEventListener('click', () => {
+      addLinkModal.classList.add('hidden');
+      addLinkModal.classList.remove('flex');
+    });
+
+    addLinkModal.addEventListener('click', (e) => {
+      if (e.target === addLinkModal) {
+        addLinkModal.classList.add('hidden');
+        addLinkModal.classList.remove('flex');
       }
     });
 
@@ -446,22 +499,29 @@
     });
 
     /* ------------------ Toggle switch in Add Link modal ------------------ */
-    const toggleSwitch = document.getElementById('toggle-switch');
-    const switchKnob = document.getElementById('switch-knob');
-    let isOn = false;
+    function setupToggle(toggleId, knobId) {
+      const toggleSwitch = document.getElementById(toggleId);
+      const switchKnob = document.getElementById(knobId);
+      if (!toggleSwitch || !switchKnob) return;
 
-    toggleSwitch.addEventListener('click', () => {
-      isOn = !isOn;
-      if (isOn) {
-        toggleSwitch.classList.remove('bg-gray-300');
-        toggleSwitch.classList.add('bg-brand-red');
-        switchKnob.style.transform = 'translateX(1.25rem)';
-      } else {
-        toggleSwitch.classList.add('bg-gray-300');
-        toggleSwitch.classList.remove('bg-brand-red');
-        switchKnob.style.transform = 'translateX(0)';
-      }
-    });
+      let isOn = false;
+
+      toggleSwitch.addEventListener('click', () => {
+        isOn = !isOn;
+        if (isOn) {
+          toggleSwitch.classList.remove('bg-gray-300');
+          toggleSwitch.classList.add('bg-brand-red');
+          switchKnob.style.transform = 'translateX(1.25rem)';
+        } else {
+          toggleSwitch.classList.add('bg-gray-300');
+          toggleSwitch.classList.remove('bg-brand-red');
+          switchKnob.style.transform = 'translateX(0)';
+        }
+      });
+    }
+
+    setupToggle('toggle-switch-edit', 'switch-knob-edit');
+    setupToggle('toggle-switch-add', 'switch-knob-add');
   </script>
 </body>
 
