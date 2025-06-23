@@ -67,6 +67,10 @@
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
   }
+  body {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   hr {
     height: 0;
     color: inherit;
@@ -587,6 +591,9 @@
   }
   .max-w-\[600px\] {
     max-width: 600px;
+  }
+  .max-w-\[649px\] {
+    max-width: 649px;
   }
   .max-w-\[768px\] {
     max-width: 768px;
