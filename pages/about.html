@@ -9,7 +9,7 @@
 </head>
 
 <body class="min-h-screen flex justify-center bg-gray-200">
-  <div class="max-w-[396px] bg-white w-full pb-24">
+  <div class="max-w-[396px] bg-white w-full pb-6">
     <div class="grid grid-cols-3 items-center p-5">
       <div>
         <img src="./../assets/icons/menu.svg" alt="menu" class="size-5">
@@ -58,7 +58,7 @@
         destinations.
       </p>
       <div class="mt-4 flex justify-center items-center gap-2">
-        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white" id="add-link">
+        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white">
           + Add Link
         </button>
       </div>
@@ -79,7 +79,7 @@
           <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
           <p class="max-w-56">Dune: Prophecy | Official Trailer - Power | Max</p>
         </div>
-        <div><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></div>
+        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex justify-between border-t-2 py-[10px]">
@@ -88,7 +88,7 @@
           <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
           <p class="max-w-56 truncate">Ewan Mitchell & Tom Glynn-Carney React To House of the Dr...</p>
         </div>
-        <div><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></div>
+        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex justify-between border-t-2 py-[10px]">
@@ -96,7 +96,7 @@
           <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
           <p class="max-w-56 ml-4">Dune: Prophecy | Official Trailer - Power | Max</p>
         </div>
-        <div><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></div>
+        <div><button class="add-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button></div>
       </div>
 
       <div class="flex flex-col gap-2 border-t-2 py-[10px]">
@@ -337,13 +337,15 @@
 
   <script>
     /* ------------------ Add Link Modal ------------------ */
-    const addLinkBtn = document.getElementById('add-link');
+    const addLinkBtns = document.querySelectorAll('.add-link-btn');
     const modal = document.getElementById('add-link-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
 
-    addLinkBtn.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+    addLinkBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
     });
 
     closeModalBtn.addEventListener('click', () => {
