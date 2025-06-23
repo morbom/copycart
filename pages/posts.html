@@ -156,13 +156,13 @@
 
   <!-- ------------------ Comments Modal ------------------ -->
   <div id="comments-modal" class="fixed inset-0 z-50 items-end justify-center max-w-[396px] mx-auto hidden">
-    <div class="grid bg-white rounded-t-lg shadow-2xl w-full max-w-md px-5 py-8 relative max-h-[500px] z-50">
+    <div class="grid bg-white rounded-t-lg shadow-2xl w-full max-w-md px-5 py-8 relative z-50 border-t border-gray-300">
       <p class="font-semibold text-2xl">Comments</p>
       <div class="flex grid-1 my-3.5 gap-2">
         <div class="py-2.5 px-7 rounded-full bg-black text-white">Top</div>
         <div class="py-2.5 px-7 rounded-full bg-[#0E0D0D0D]">Newest</div>
       </div>
-      <div class="grid gap-4 overflow-auto">
+      <div class="grid gap-4 overflow-y-auto h-[280px] mb-16">
         <div class="flex justify-between gap-4">
           <div class="flex gap-2.5">
             <div>
@@ -175,10 +175,6 @@
                 <span class="text-[#0E0D0D80]">2d ago</span>
               </p>
               <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
-              <p class="underline underline-offset-4 flex items-center gap-2">
-                <span>5 Replies</span>
-                <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
-              </p>
             </div>
           </div>
           <div>
@@ -207,7 +203,7 @@
                   <span class="text-xs">12</span>
                 </div>
               </div>
-              <p class="underline underline-offset-4 flex items-center gap-2">
+              <p class="underline underline-offset-4 flex items-center gap-2" id="replies">
                 <span>5 Replies</span>
                 <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
               </p>
@@ -239,16 +235,108 @@
                   <span class="text-xs">12</span>
                 </div>
               </div>
-              <p class="underline underline-offset-4 flex items-center gap-2">
-                <span>5 Replies</span>
-                <img src="./../assets/icons/arrow-right-sm.svg" alt="arrow-right-sm">
-              </p>
             </div>
           </div>
           <div>
             <img src="./../assets/icons/heart-red.svg" class="size-5" alt="heart-red">
           </div>
         </div>
+      </div>
+      <div class="p-5 fixed mx-auto bottom-0 bg-[#FAFAFA] flex items-center gap-4 w-[396px]">
+        <img src="./../assets/images/7.png" class="size-12" alt="7.png">
+        <input type="text" id="add-comment" class="border rounded-full py-2 px-4 flex-1" placeholder="Add a comment...">
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------ Replies Modal ------------------ -->
+  <div id="replies-modal" class="fixed inset-0 z-50 items-end justify-center max-w-[396px] mx-auto hidden">
+    <div class="grid bg-white rounded-t-lg shadow-2xl w-full max-w-md px-5 py-8 relative z-50 border-t border-gray-300">
+      <div class="flex items-center gap-2">
+        <div class="bg-[#0E0D0D0D] rounded-full size-7 flex items-center justify-center" id="back-replies">
+          <img src="./../assets/icons/arrow-left.svg" alt="arrow-left">
+        </div>
+        <p class="font-semibold text-2xl">Replies</p>
+      </div>
+      <div class="grid gap-4 overflow-y-auto h-[280px] mb-16">
+        <div class="flex justify-between gap-4">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart.svg" class="size-5" alt="heart">
+          </div>
+        </div>
+        <div class="flex justify-between gap-4 px-12">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+              <div class="flex items-center gap-4 text-[#0E0D0D80] mb-4">
+                <div class="flex items-center">
+                  <img src="./../assets/icons/heart-gray.svg" class="size-3" alt="heart-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./../assets/icons/message-gray.svg" class="size-3" alt="message-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart-red.svg" class="size-5" alt="heart-red">
+          </div>
+        </div>
+        <div class="flex justify-between gap-4">
+          <div class="flex gap-2.5">
+            <div>
+              <img src="./../assets/images/7.png" alt="7.png">
+            </div>
+            <div>
+              <p class="flex items-center gap-2">
+                <span class="font-semibold text-sm">@stackedfit</span>
+                <img src="./../assets/icons/verified.svg" alt="verified">
+                <span class="text-[#0E0D0D80]">2d ago</span>
+              </p>
+              <p>Obsessed with this fit! 🔥 Where can I grab a pair?</p>
+              <div class="flex items-center gap-4 text-[#0E0D0D80] mb-4">
+                <div class="flex items-center">
+                  <img src="./../assets/icons/heart-gray.svg" class="size-3" alt="heart-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+                <div class="flex items-center">
+                  <img src="./../assets/icons/message-gray.svg" class="size-3" alt="message-gray" />
+                  <span class="text-xs">12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="./../assets/icons/heart-red.svg" class="size-5" alt="heart-red">
+          </div>
+        </div>
+      </div>
+      <div class="p-5 fixed mx-auto bottom-0 bg-[#FAFAFA] flex items-center gap-4 w-[396px]">
+        <img src="./../assets/images/7.png" class="size-12" alt="7.png">
+        <input type="text" id="add-comment" class="border rounded-full py-2 px-4 flex-1" placeholder="Add a comment...">
       </div>
     </div>
   </div>
@@ -305,6 +393,34 @@
       if (e.target === commentsModal) {
         commentsModal.classList.add('hidden');
         commentsModal.classList.remove('flex');
+      }
+    });
+
+    /* ------------------ Replies Modal ------------------ */
+    const repliesBtn = document.getElementById('replies');
+    const repliesModal = document.getElementById('replies-modal');
+    const backRepliesBtn = document.getElementById('back-replies');
+
+    repliesBtn.addEventListener('click', () => {
+      repliesModal.classList.remove('hidden');
+      repliesModal.classList.add('flex');
+      commentsModal.classList.add('hidden');
+      commentsModal.classList.remove('flex');
+    });
+
+    backRepliesBtn.addEventListener('click', () => {
+      repliesModal.classList.add('hidden');
+      repliesModal.classList.remove('flex');
+      commentsModal.classList.remove('hidden');
+      commentsModal.classList.add('flex');
+    });
+
+    repliesModal.addEventListener('click', (e) => {
+      if (e.target === repliesModal) {
+        repliesModal.classList.add('hidden');
+        repliesModal.classList.remove('flex');
+        commentsModal.classList.remove('hidden');
+        commentsModal.classList.add('flex');
       }
     });
   </script>
