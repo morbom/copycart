@@ -10,35 +10,35 @@
 
 <body class="min-h-screen flex justify-center bg-gray-200">
   <div class="flex-col pl-4 pb-24 pt-7 pr-7 hidden md:flex bg-white">
-    <div class="flex justify-start items-center font-medium text-xl mb-5 cursor-pointer">
+    <div class="flex justify-start items-center font-medium text-xl mb-5">
       <img src="./../assets/icons/bucket.svg" class="size-9" alt="bucket" />
     </div>
-    <div class="text-black hover:text-red-500 mb-[6px] cursor-pointer">Home</div>
-    <div class="text-black hover:text-red-500 mb-[6px] cursor-pointer">Posts</div>
-    <div class="text-black hover:text-red-500 mb-[6px] cursor-pointer">Closet</div>
-    <div class="text-black hover:text-red-500 cursor-pointer">Businesses</div>
+    <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Home</a>
+    <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Posts</a>
+    <a class="text-black hover:text-red-500 mb-[6px]" href="" target="_blank">Closet</a>
+    <a class="text-black hover:text-red-500" href="" target="_blank">Businesses</a>
 		<nav
 			class="fixed top-1/2 -translate-y-1/2 hidden md:block bg-white/40 backdrop-blur-sm rounded-full p-4 z-20 shadow-lg">
 			<div class="flex flex-col items-center justify-center gap-y-6">
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/home.svg" alt="Home" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
 				</a>
-				<a href="#" class="rounded-full p-2 shadow-md">
+				<a href="" target="_blank" class="rounded-full p-2 shadow-md">
 					<img src="./../assets/icons/add.svg" alt="Add" class="size-6">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
 				</a>
 			</div>
 		</nav>
   </div>
-  <div class="max-w-150 bg-white w-full pr-4 pb-24 pt-7">
+  <div class="max-w-[1400px] bg-white w-full pr-4 pb-24 pt-7">
     <div class="grid grid-cols-3 md:grid-cols-2 items-center p-5">
       <div class="block md:hidden">
         <img src="./../assets/icons/menu.svg" alt="menu" class="size-6">
@@ -47,9 +47,9 @@
         <img src="./../assets/icons/bucket.svg" class="size-9" alt="bucket" />
       </div>
       <div class="flex justify-end items-center">
-        <button class="bg-gray-100 rounded-full p-2">
+        <a class="bg-gray-100 rounded-full p-2" href="" target="_blank">
           <img src="./../assets/icons/link.svg" alt="link" class="size-5">
-        </button>
+        </a>
       </div>
     </div>
 
@@ -66,11 +66,15 @@
     </div>
 
     <div class="flex gap-1 overflow-x-auto px-5 py-4">
-      <button class="rounded-full px-4 py-1 text-nowrap text-white bg-brand-red">For your</button>
-      <button class="rounded-full px-4 py-1 text-nowrap bg-gray-100">Trending</button>
-      <button class="rounded-full px-4 py-1 text-nowrap bg-gray-100">Deals</button>
-      <button class="rounded-full px-4 py-1 text-nowrap bg-gray-100">Business</button>
-      <button class="rounded-full px-4 py-1 text-nowrap bg-gray-100">Closet</button>
+      <a class="rounded-full px-4 py-1 text-nowrap text-white bg-brand-red" href="" target="_blank">For your</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Trending</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Deals</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Business</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Closet</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Trending</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Deals</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Business</a>
+      <a class="rounded-full px-4 py-1 text-nowrap bg-gray-100" href="" target="_blank">Closet</a>
     </div>
 
     <!-- ------------------ Follow Section ------------------ -->
@@ -84,12 +88,12 @@
           <img src="./../assets/icons/verified.svg" alt="verified">
         </div>
       </div>
-      <button class="rounded-full px-8 text-white bg-black">Follow</button>
+      <a class="rounded-full px-8 text-white bg-black" href="" target="_blank">Follow</a>
     </div>
 
     <!-- ------------------ Follow Section ------------------ -->
     <div class="flex p-5 relative">
-      <img src="./../assets/images/6.png" class="aspect-square" alt="6.png">
+      <img src="./../assets/images/6.png" class="aspect-square w-full" alt="6.png">
       <div class="absolute left-8 top-9 flex items-center gap-1.5">
         <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
         <span class="text-white">2d ago</span>
@@ -136,7 +140,7 @@
               </p>
             </div>
           </div>
-          <button class="rounded-full px-4 py-2 text-white bg-black">Shop Now</button>
+          <a class="rounded-full px-4 py-2 text-white bg-black" href="" target="_blank">Shop Now</a>
         </div>
 
         <!-- ------------------ Follow Section ------------------ -->
@@ -144,12 +148,12 @@
           <div class="flex flex-col gap-2 min-w-52">
             <img src="./../assets/images/2.png" alt="2.png">
             <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-            <button class="border rounded-full py-2">See options</button>
+            <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
           </div>
           <div class="flex flex-col gap-2 min-w-52">
             <img src="./../assets/images/2.png" alt="2.png">
             <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-            <button class="bg-black text-white rounded-full py-2">Add to Cart</button>
+            <a class="bg-black text-white text-center rounded-full py-2" href="" target="_blank">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -166,12 +170,12 @@
           <img src="./../assets/icons/verified.svg" alt="verified">
         </div>
       </div>
-      <button class="rounded-full px-8 text-white bg-black">Follow</button>
+      <a class="rounded-full px-8 text-white bg-black" href="" target="_blank">Follow</a>
     </div>
 
     <!-- ------------------ Follow Section ------------------ -->
     <div class="flex p-5 relative">
-      <img src="./../assets/images/6.png" class="size-[353px]" alt="6.png">
+      <img src="./../assets/images/6.png" class="aspect-square w-full" alt="6.png">
       <div class="absolute left-8 top-9 flex items-center gap-1.5">
         <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
         <span class="text-white">2d ago</span>
@@ -202,19 +206,19 @@
       class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
       style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
       <div class="flex items-center justify-center gap-x-6 w-full">
-        <a href="#">
+        <a href="" target="_blank">
           <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
         </a>
-        <a href="#">
+        <a href="" target="_blank">
           <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
         </a>
-        <a href="#" class="bg-white rounded-full p-2 shadow-md">
+        <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
           <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
         </a>
-        <a href="#">
+        <a href="" target="_blank">
           <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
         </a>
-        <a href="#">
+        <a href="" target="_blank">
           <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
         </a>
       </div>

@@ -9,12 +9,12 @@
 </head>
 
 <body class="min-h-screen flex justify-center bg-gray-200">
-  <div class="max-w-150 bg-white w-full pb-24">
+  <div class="max-w-[1400px] bg-white w-full pb-24">
     <div class="grid grid-cols-3 items-center p-5">
       <div>
-        <div class="bg-gray-100 rounded-full size-7 flex items-center justify-center">
+        <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
           <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
-        </div>
+        </a>
       </div>
       <div class="flex justify-center items-center gap-2 font-medium text-xl">
         Notifications
@@ -22,19 +22,25 @@
     </div>
 
     <div class="flex gap-2 overflow-x-auto px-5">
-      <button class="rounded-full text-nowrap px-6 py-2 text-white bg-brand-red">All</button>
-      <button class="rounded-full text-nowrap pl-6 pr-9 py-2 bg-gray-100 flex gap-2">
+      <a class="rounded-full text-nowrap px-6 py-2 text-white bg-brand-red" href="" target="_blank">All</a>
+      <a class="rounded-full text-nowrap pl-6 pr-9 py-2 bg-gray-100 flex gap-2" href="" target="_blank">
         <img src="./../assets/icons/lock.svg" alt="lock">
         <span>Access Requests</span>
-      </button>
-      <button class="rounded-full text-nowrap px-6 py-2 bg-gray-100">Likes</button>
-      <button class="rounded-full text-nowrap px-6 py-2 bg-gray-100">Control</button>
+      </a>
+      <a class="rounded-full text-nowrap px-6 py-2 bg-gray-100" href="" target="_blank">Likes</a>
+      <a class="rounded-full text-nowrap px-6 py-2 bg-gray-100" href="" target="_blank">Control</a>
+      <a class="rounded-full text-nowrap pl-6 pr-9 py-2 bg-gray-100 flex gap-2" href="" target="_blank">
+        <img src="./../assets/icons/lock.svg" alt="lock">
+        <span>Access Requests</span>
+      </a>
+      <a class="rounded-full text-nowrap px-6 py-2 bg-gray-100" href="" target="_blank">Likes</a>
+      <a class="rounded-full text-nowrap px-6 py-2 bg-gray-100" href="" target="_blank">Control</a>
     </div>
 
     <div class="grid gap-3 px-5 mt-5">
       <!-- ------------------ Today Section ------------------ -->
       <p class="text-xl leading-7 mb-2">Today</p>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -48,7 +54,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -62,7 +68,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -76,7 +82,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative size-10">
           <img src="./../assets/images/9.png" class="size-10 absolute -right-2 -bottom-2" alt="9.png">
           <img src="./../assets/images/7.png" class="size-10 absolute left-0 top-0" alt="7.png">
@@ -94,7 +100,7 @@
 
       <!-- ------------------ Yesterday Section ------------------ -->
       <p class="text-xl leading-7 mb-2 mt-4">Yesterday</p>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -108,7 +114,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -122,7 +128,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -136,7 +142,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative size-10">
           <img src="./../assets/images/9.png" class="size-10 absolute -right-2 -bottom-2" alt="9.png">
           <img src="./../assets/images/7.png" class="size-10 absolute left-0 top-0" alt="7.png">
@@ -154,7 +160,7 @@
 
       <!-- ------------------ Week ago Section ------------------ -->
       <p class="text-xl leading-7 mb-2 mt-4">Week ago</p>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -168,7 +174,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -182,7 +188,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative">
           <img src="./../assets/images/7.png" class="size-10" alt="7.png">
           <div
@@ -196,7 +202,7 @@
         </p>
         <img src="./../assets/images/8.png" class="size-12" alt="8.png">
       </div>
-      <div class="flex items-center gap-4 notification-row">
+      <div class="flex items-center gap-4 notification-row cursor-pointer">
         <div class="relative size-10">
           <img src="./../assets/images/9.png" class="size-10 absolute -right-2 -bottom-2" alt="9.png">
           <img src="./../assets/images/7.png" class="size-10 absolute left-0 top-0" alt="7.png">
@@ -252,22 +258,22 @@
   </div>
 
   <nav
-    class="fixed bottom-2 left-5 right-5 mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
+    class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
     style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
     <div class="flex items-center justify-center gap-x-6 w-full">
-      <a href="#">
+      <a href="" target="_blank">
         <img src="./../assets/icons/home.svg" alt="Home" class="size-9">
       </a>
-      <a href="#">
+      <a href="" target="_blank">
         <img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
       </a>
-      <a href="#" class="bg-white rounded-full p-2 shadow-md">
+      <a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
         <img src="./../assets/icons/add.svg" alt="Add" class="size-6">
       </a>
-      <a href="#">
+      <a href="" target="_blank">
         <img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
       </a>
-      <a href="#">
+      <a href="" target="_blank">
         <img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
       </a>
     </div>

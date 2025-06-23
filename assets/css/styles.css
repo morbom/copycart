@@ -515,6 +515,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .max-h-\[500px\] {
     max-height: 500px;
   }
@@ -580,6 +583,9 @@
   }
   .max-w-\[600px\] {
     max-width: 600px;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
   }
   .max-w-md {
     max-width: var(--container-md);

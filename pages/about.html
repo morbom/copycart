@@ -10,20 +10,20 @@
 
 <body class="min-h-screen flex justify-center bg-gray-200">
   <div class=" flex-col pl-4 pb-24 pt-7 pr-7 hidden md:flex bg-white">
-    <div class="flex justify-start items-center font-medium text-xl mb-5 cursor-pointer">
+    <div class="flex justify-start items-center font-medium text-xl mb-5">
       <img src="./../assets/icons/bucket.svg" class="size-9" alt="bucket" />
     </div>
-    <div class="text-black hover:text-brand-red text-[16px] mb-[6px] cursor-pointer">Home</div>
-    <div class="text-black hover:text-brand-red text-[16px] mb-[6px] cursor-pointer">Posts</div>
-    <div class="text-black hover:text-brand-red text-[16px] mb-[6px] cursor-pointer">Closet</div>
-    <div class="text-black hover:text-brand-red text-[16px] cursor-pointer">Businesses</div>
+    <a class="text-black hover:text-brand-red text-[16px] mb-[6px]" href="" target="_blank" >Home</a>
+    <a class="text-black hover:text-brand-red text-[16px] mb-[6px]" href="" target="_blank">Posts</a>
+    <a class="text-black hover:text-brand-red text-[16px] mb-[6px]" href="" target="_blank">Closet</a>
+    <a class="text-black hover:text-brand-red text-[16px]" href="" target="_blank">Businesses</a>
 		<nav
 			class="fixed top-1/2 -translate-y-1/2 hidden md:block bg-white/40 backdrop-blur-sm rounded-full p-4 z-20 shadow-lg">
 			<div class="flex flex-col items-center justify-center gap-y-6">
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/home.svg" alt="Home" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
 				</a>
 				<a href="" target="_blank" class="rounded-full p-2 shadow-md">
@@ -38,7 +38,7 @@
 			</div>
 		</nav>
   </div>
-  <div class="max-w-150 bg-white w-full pr-4 pb-24 pt-7">
+  <div class="max-w-[1400px] bg-white w-full pr-4 pb-24 pt-7">
     <div class="grid grid-cols-3 md:grid-cols-2 items-center p-5">
       <div class="block md:hidden">
         <img src="./../assets/icons/menu.svg" alt="menu" class="size-5">
@@ -78,7 +78,7 @@
       </div>
       <div class="flex justify-center items-center gap-2">
         <span class="text-lg font-semibold">Lisa Parker | Influencer</span>
-        <button id="edit-username">
+        <button id="edit-username" class="cursor-pointer">
           <img src="./../assets/icons/pencil.svg" alt="pencil" class="size-3">
         </button>
       </div>
@@ -87,7 +87,7 @@
         destinations.
       </p>
       <div class="mt-4 flex justify-center items-center gap-2">
-        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white" id="add-link">
+        <button class="flex items-center gap-2 border rounded-full px-4 py-1 bg-black text-white cursor-pointer" id="add-link">
           + Add Link
         </button>
       </div>
@@ -135,8 +135,12 @@
         <div class="flex justify-between gap-4">
           <p class="max-w-56">Dune: Prophecy | Official Trailer - Power | Max</p>
           <div class="flex gap-4">
-            <img src="./../assets/icons/pencil.svg" class="size-5" alt="edit">
-            <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+            <a href="" target="_blank">
+              <img src="./../assets/icons/pencil.svg" class="size-5" alt="edit">
+            </a>
+            <a href="" target="_blank">
+              <img src="./../assets/icons/link.svg" class="size-5" alt="link">
+            </a>
           </div>
         </div>
       </div>
@@ -197,18 +201,18 @@
           <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
           <p class="max-w-56">Ewan Mitchell & Tom Glynn-Carney React To House</p>
         </div>
-        <div><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></div>
+        <div><a href="" target="_blank"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></a></div>
       </div>
     </div>
 
     <div class="grid grid-cols-2 gap-1.5 px-5 mt-4">
-      <button class="flex justify-center items-center gap-1 py-3 border rounded-full">
+      <a class="flex justify-center items-center gap-1 py-3 border rounded-full" href="" target="_blank">
         <img src="./../assets/icons/eye.svg" alt="eye">
         <span>Preview</span>
-      </button>
-      <button class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full">
+      </a>
+      <a class="flex justify-center items-center gap-1 py-3 bg-black text-white rounded-full" href="" target="_blank">
         Save
-      </button>
+      </a>
     </div>
 
     <!-- ------------------ Edit Link Modal ------------------ -->
