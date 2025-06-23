@@ -8,112 +8,118 @@
   <link href="./../assets/css/styles.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen max-w-[396px] px-5">
-  <div class="grid grid-cols-3 items-center py-5">
-    <div>
-      <div class="bg-gray-100 rounded-full size-7 flex items-center justify-center">
-        <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
-      </div>
-    </div>
-    <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
-      Add closet items
-    </div>
-  </div>
-
-  <div class="relative w-full">
-    <input type="text" placeholder="Insert URL here"
-      class="w-full pl-10 pr-4 py-2 bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
-      id="search" />
-    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-      <img src="./../assets/icons/search.svg" alt="search">
-    </span>
-  </div>
-
-  <div class="grid grid-cols-2 gap-x-2 gap-y-4 mt-4">
-    <div class="flex flex-col relative">
-      <img src="./../assets/images/2.png" alt="2.png" />
-      <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+<body class="min-h-screen flex justify-center bg-gray-200">
+  <div class="max-w-[396px] bg-white px-5 w-full">
+    <div class="grid grid-cols-3 items-center py-5">
       <div>
-        <sup>$</sup>
-        <span class="font-medium text-2xl">230</span>
-        <sup>99</sup>
+        <div class="bg-gray-100 rounded-full size-7 flex items-center justify-center">
+          <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+        </div>
       </div>
-      <button class="bg-black text-white rounded-full py-2">Add to Cart</button>
-    </div>
-    <div class="flex flex-col relative">
-      <img src="./../assets/images/2.png" alt="2.png" />
-      <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
-      <div>
-        <sup>$</sup>
-        <span class="font-medium text-2xl">230</span>
-        <sup>99</sup>
+      <div class="flex justify-center items-center gap-2 font-medium text-xl text-nowrap">
+        Add closet items
       </div>
-      <button
-        class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
-        <img src="./../assets/icons/eye.svg" alt="eye" />
-      </button>
-      <p class="text-brand-red flex items-center gap-2 py-2">
-        <img src="./../assets/icons/check-red.svg" alt="check" />
-        <span>Added to Closet</span>
-      </p>
     </div>
-    <div class="flex flex-col relative">
-      <img src="./../assets/images/2.png" alt="2.png" />
-      <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
-      <div>
-        <sup>$</sup>
-        <span class="font-medium text-2xl">230</span>
-        <sup>99</sup>
-      </div>
-      <button class="bg-black text-white rounded-full py-2">Add to Cart</button>
-    </div>
-    <div class="flex flex-col relative">
-      <img src="./../assets/images/2.png" alt="2.png" />
-      <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
-      <div>
-        <sup>$</sup>
-        <span class="font-medium text-2xl">230</span>
-        <sup>99</sup>
-      </div>
-      <button
-        class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
-        <img src="./../assets/icons/eye-cross-red.svg" alt="eye-cross-red" />
-      </button>
-      <p class="text-brand-red flex items-center gap-2 py-2">
-        <img src="./../assets/icons/check-red.svg" alt="check" />
-        <span>Added to Closet</span>
-      </p>
-    </div>
-  </div>
-  <button class="bg-black text-white rounded-full w-full py-2 mt-5">Complete</button>
-  <p class="text-center mt-2 mb-8">2 items Added to Closet</p>
 
-  <!-- ------------------ Edit Username Modal ------------------ -->
-  <div id="item-visibility-modal"
-    class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
-    <div class="grid bg-white rounded-2xl shadow-lg w-full max-w-md px-2 py-5 relative">
-      <button id="item-visibility-modal-btn" class="absolute top-6 right-3">
-        <img src="./../assets/icons/close.svg" alt="close">
-      </button>
-      <p class="text-lg mb-4 text-center">Choose your item visability</p>
+    <div class="relative w-full">
+      <input type="text" placeholder="Insert URL here"
+        class="w-full pl-10 pr-4 py-2 bg-[#0E0D0D1A] rounded-full focus:outline-none focus:ring-2 focus:ring-brand-red focus:border-brand-red transition"
+        id="search" />
+      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+        <img src="./../assets/icons/search.svg" alt="search">
+      </span>
+    </div>
 
-      <div id="modal-content" class="flex flex-col items-center w-full">
-        <button class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
-          <img src="./../assets/icons/eye-white.svg" alt="eye-white">
-          <span>Public</span>
+    <div class="grid grid-cols-2 gap-x-2 gap-y-4 mt-4">
+      <div class="flex flex-col relative">
+        <img src="./../assets/images/2.png" alt="2.png" />
+        <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+        <div>
+          <sup>$</sup>
+          <span class="font-medium text-2xl">230</span>
+          <sup>99</sup>
+        </div>
+        <button class="bg-black text-white rounded-full py-2">Add to Cart</button>
+      </div>
+      <div class="flex flex-col relative">
+        <img src="./../assets/images/2.png" alt="2.png" />
+        <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+        <div>
+          <sup>$</sup>
+          <span class="font-medium text-2xl">230</span>
+          <sup>99</sup>
+        </div>
+        <button
+          class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
+          <img src="./../assets/icons/eye.svg" alt="eye" />
         </button>
-        <button class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
-          <img src="./../assets/icons/community.svg" alt="community">
-          <span>Community</span>
+        <p class="text-brand-red flex items-center gap-2 py-2">
+          <img src="./../assets/icons/check-red.svg" alt="check" />
+          <span>Added to Closet</span>
+        </p>
+      </div>
+      <div class="flex flex-col relative">
+        <img src="./../assets/images/2.png" alt="2.png" />
+        <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+        <div>
+          <sup>$</sup>
+          <span class="font-medium text-2xl">230</span>
+          <sup>99</sup>
+        </div>
+        <button class="bg-black text-white rounded-full py-2">Add to Cart</button>
+      </div>
+      <div class="flex flex-col relative">
+        <img src="./../assets/images/2.png" alt="2.png" />
+        <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
+        <div>
+          <sup>$</sup>
+          <span class="font-medium text-2xl">230</span>
+          <sup>99</sup>
+        </div>
+        <button
+          class="rounded-full size-8 flex-none flex items-center justify-center bg-[#FAFAFA66] absolute right-1 top-1 item-visibility">
+          <img src="./../assets/icons/eye-cross-red.svg" alt="eye-cross-red" />
         </button>
-        <button class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
-          <img src="./../assets/icons/friends.svg" alt="friends">
-          <span>Friends</span>
+        <p class="text-brand-red flex items-center gap-2 py-2">
+          <img src="./../assets/icons/check-red.svg" alt="check" />
+          <span>Added to Closet</span>
+        </p>
+      </div>
+    </div>
+    <button class="bg-black text-white rounded-full w-full py-2 mt-5">Complete</button>
+    <p class="text-center mt-2 mb-8">2 items Added to Closet</p>
+
+    <!-- ------------------ Edit Username Modal ------------------ -->
+    <div id="item-visibility-modal"
+      class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
+      <div class="grid bg-white rounded-2xl shadow-lg w-full max-w-md px-2 py-5 relative">
+        <button id="item-visibility-modal-btn" class="absolute top-6 right-3">
+          <img src="./../assets/icons/close.svg" alt="close">
         </button>
-        <button class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
-          <img src="./../assets/icons/eye-cross.svg" alt="eye-cross">
-          <span>Private (Only Me)</span>
-        </button>
+        <p class="text-lg mb-4 text-center">Choose your item visability</p>
+
+        <div id="modal-content" class="flex flex-col items-center w-full">
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/eye-white.svg" alt="eye-white">
+            <span>Public</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/community.svg" alt="community">
+            <span>Community</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/friends.svg" alt="friends">
+            <span>Friends</span>
+          </button>
+          <button
+            class="bg-[#0E0D0DB2] py-2 mt-2 rounded-full flex items-center justify-center gap-2 text-white w-full">
+            <img src="./../assets/icons/eye-cross.svg" alt="eye-cross">
+            <span>Private (Only Me)</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
