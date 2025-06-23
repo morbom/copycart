@@ -20,19 +20,19 @@
 		<nav
 			class="fixed top-1/2 -translate-y-1/2 hidden md:block bg-white/40 backdrop-blur-sm rounded-full p-4 z-20 shadow-lg">
 			<div class="flex flex-col items-center justify-center gap-y-6">
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/home.svg" alt="Home" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
 				</a>
-				<a href="#" class="rounded-full p-2 shadow-md">
+				<a href="" target="_blank" class="rounded-full p-2 shadow-md">
 					<img src="./../assets/icons/add.svg" alt="Add" class="size-6">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
 				</a>
 			</div>
@@ -100,12 +100,12 @@
 
 		<!-- ------------------ Tabs Section ------------------ -->
 		<div class="flex overflow-x-auto px-5">
-			<div class="px-4 py-2 tab-btn border-b-2 border-brand-red text-brand-red" data-tab-target="#Home">Home</div>
-			<div class="px-4 py-2 tab-btn" data-tab-target="#Posts">Posts</div>
-			<div class="px-4 py-2 tab-btn" data-tab-target="#Closet">Closet</div>
-			<div class="px-4 py-2 tab-btn" data-tab-target="#Business">Business</div>
-			<div class="px-4 py-2 tab-btn" data-tab-target="#Posts">Posts</div>
-			<div class="px-4 py-2 tab-btn" data-tab-target="#Bookmarks">Bookmarks</div>
+			<div class="px-4 py-2 tab-btn border-b-2 border-brand-red text-brand-red cursor-pointer" data-tab-target="#Home">Home</div>
+			<div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Posts">Posts</div>
+			<div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Closet">Closet</div>
+			<div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Business">Business</div>
+			<div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Posts">Posts</div>
+			<div class="px-4 py-2 tab-btn cursor-pointer" data-tab-target="#Bookmarks">Bookmarks</div>
 		</div>
 
 		<!-- ------------------ Home Tab ------------------ -->
@@ -114,7 +114,7 @@
 			<div class="grid gap-2 mt-8">
 				<div class="flex justify-between items-center px-5">
 					<p class="font-semibold text-xl">Posts</p>
-					<p class="text- underline underline-offset-2">View all</p>
+					<a class="text- underline underline-offset-2" href="" target="_blank">View all</a>
 				</div>
 				<div class="flex gap-1 overflow-x-auto px-5">
 					<div class="flex min-w-36 min-h-48 relative">
@@ -145,13 +145,19 @@
 			<div class="grid gap-2 mt-8">
 				<div class="flex justify-between items-center px-5">
 					<p class="font-semibold text-xl">Closet</p>
-					<p class="text- underline underline-offset-2">View all</p>
+					<a class="text- underline underline-offset-2" href="" target="_blank">View all</a>
 				</div>
 				<div class="flex gap-1 overflow-x-auto px-5">
-					<button class="rounded-full px-4 py-1 text-white bg-brand-red">Latest</button>
-					<button class="rounded-full px-4 py-1 bg-gray-100">Beauty</button>
-					<button class="rounded-full px-4 py-1 bg-gray-100">Fashion</button>
-					<button class="rounded-full px-4 py-1 bg-gray-100">Shoes</button>
+					<a class="rounded-full px-4 py-1 text-white cursor-pointer bg-brand-red" href="" target="_blank">Latest</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Beauty</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Fashion</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Shoes</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Beauty</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Fashion</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Shoes</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Beauty</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Fashion</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100 cursor-pointer" href="" target="_blank">Shoes</a>
 				</div>
 				<div class="grid grid-cols-2 gap-2 px-5">
 					<div class="flex flex-col">
@@ -197,12 +203,12 @@
 			<div class="grid gap-2 mt-8">
 				<div class="flex justify-between items-center px-5">
 					<p class="font-semibold text-xl">Saved</p>
-					<p class="text- underline underline-offset-2">View all</p>
+					<a class="text- underline underline-offset-2" href="" target="_blank">View all</a>
 				</div>
 				<div class="flex gap-1 overflow-x-auto px-5">
-					<button class="rounded-full px-4 py-1 text-white bg-brand-red">All</button>
-					<button class="rounded-full px-4 py-1 bg-gray-100">Posts</button>
-					<button class="rounded-full px-4 py-1 bg-gray-100">Products</button>
+					<a class="rounded-full px-4 py-1 text-white bg-brand-red" href="" target="_blank">All</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100" href="" target="_blank">Posts</a>
+					<a class="rounded-full px-4 py-1 bg-gray-100" href="" target="_blank">Products</a>
 				</div>
 				<div class="grid grid-cols-3 gap-1 px-5">
 					<div class="flex gap-2 relative">
@@ -239,7 +245,7 @@
 			<div class="grid gap-2 mt-8">
 				<div class="flex justify-between items-center px-5">
 					<p class="font-semibold text-xl">Posts</p>
-					<p class="text- underline underline-offset-2">View all</p>
+					<a class="text- underline underline-offset-2" href="" target="_blank">View all</a>
 				</div>
 				<div class="flex gap-1 overflow-x-auto px-5">
 					<div class="flex min-w-36 min-h-48 relative">
@@ -270,7 +276,7 @@
 			<div class="grid gap-2 mt-8">
 				<div class="flex justify-between items-center px-5">
 					<p class="font-semibold text-xl">Closet</p>
-					<p class="text- underline underline-offset-2">View all</p>
+					<a class="text- underline underline-offset-2" href="" target="_blank">View all</a>
 				</div>
 				<div class="flex gap-1 overflow-x-auto px-5">
 					<button class="rounded-full px-4 py-1 text-white bg-brand-red">Latest</button>
@@ -313,19 +319,19 @@
 		<nav class="fixed bottom-2 left-5 right-5 block md:hidden mx-auto bg-white/40 backdrop-blur-sm rounded-full py-2 z-20 shadow-lg shadow-black/10 max-w-[356px]"
 			style="box-shadow: -14px -14px 7px -12px rgba(179, 179, 179, 1) inset;">
 			<div class="flex items-center justify-center gap-x-6 w-full">
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/home.svg" alt="Home" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/search.svg" alt="Search" class="size-9 p-[5px]">
 				</a>
-				<a href="#" class="bg-white rounded-full p-2 shadow-md">
+				<a href="" target="_blank" class="bg-white rounded-full p-2 shadow-md">
 					<img src="./../assets/icons/add.svg" alt="Add" class="size-6">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/shopping-cart.svg" alt="Cart" class="size-9">
 				</a>
-				<a href="#">
+				<a href="" target="_blank">
 					<img src="./../assets/icons/user.svg" alt="Profile" class="size-9">
 				</a>
 			</div>
