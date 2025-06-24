@@ -107,10 +107,10 @@
         </div>
       </div>
 
-      <div class="px-5">
-        <div class="flex justify-between border-t-2 py-[10px]">
+      <div id="draggable-container" class="px-5">
+        <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
           <div class="flex">
-            <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
+            <div class="drag-handle"><img src="./../assets/icons/handle.svg" alt="handle"></div>
             <a href="" target="_blank">
               <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
             </a>
@@ -120,9 +120,9 @@
           </div>
         </div>
 
-        <div class="flex justify-between border-t-2 py-[10px]">
+        <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
           <div class="flex">
-            <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
+            <div class="drag-handle"><img src="./../assets/icons/handle.svg" alt="handle"></div>
             <a href="" target="_blank">
               <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
             </a>
@@ -132,9 +132,9 @@
           </div>
         </div>
 
-        <div class="flex justify-between border-t-2 py-[10px]">
+        <div class="flex justify-between border-t-2 py-[10px] draggable-item" draggable="true">
           <div class="flex">
-            <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
+            <div class="drag-handle"><img src="./../assets/icons/handle.svg" alt="handle"></div>
             <a href="" target="_blank"><p class="max-w-56 ml-4">Dune: Prophecy | Official Trailer - Power | Max</p></a>
           </div>
           <div><button class="edit-link-btn"><img src="./../assets/icons/pencil.svg" class="size-5" alt="edit"></button>
@@ -218,9 +218,9 @@
             allowfullscreen></iframe>
         </div>
 
-        <div class="flex justify-between border-t-2 border-b-2 py-[10px]">
-          <div class="flex">
-            <div><img src="./../assets/icons/handle.svg" alt="handle"></div>
+        <div class="flex justify-between border-t-2 border-b-2 py-[10px] draggable-item" draggable="true">
+          <div class="flex items-center">
+            <div class="drag-handle"><img src="./../assets/icons/handle.svg" alt="handle"></div>
             <a href="" target="_blank">
               <img src="./../assets/images/3.png" class="size-[50px] rounded-sm ml-4 mr-2.5" alt="3.png">
             </a>
@@ -582,6 +582,45 @@
 
     setupToggle('toggle-switch-edit', 'switch-knob-edit');
     setupToggle('toggle-switch-add', 'switch-knob-add');
+
+    const container = document.getElementById('draggable-container');
+    let draggingElement = null;
+
+    container.addEventListener('dragstart', (e) => {
+      if (e.target.closest('.draggable-item')) {
+        draggingElement = e.target.closest('.draggable-item');
+        e.dataTransfer.effectAllowed = 'move';
+        // Add a class to indicate dragging, with a slight delay
+        setTimeout(() => {
+          draggingElement.classList.add('dragging');
+        }, 0);
+      }
+    });
+
+    container.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      const targetItem = e.target.closest('.draggable-item');
+      if (targetItem && draggingElement && targetItem !== draggingElement) {
+        const rect = targetItem.getBoundingClientRect();
+        const isAfter = e.clientY > rect.top + rect.height / 2;
+        if (isAfter) {
+          container.insertBefore(draggingElement, targetItem.nextSibling);
+        } else {
+          container.insertBefore(draggingElement, targetItem);
+        }
+      }
+    });
+
+    container.addEventListener('dragend', () => {
+      if (draggingElement) {
+        draggingElement.classList.remove('dragging');
+        draggingElement = null;
+      }
+    });
+
+    container.addEventListener('drop', (e) => {
+      e.preventDefault();
+    });
   </script>
 </body>
 
