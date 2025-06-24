@@ -128,7 +128,6 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -197,6 +196,9 @@
   }
 }
 @layer utilities {
+  .\@container {
+    container-type: inline-size;
+  }
   .visible {
     visibility: visible;
   }
@@ -524,6 +526,12 @@
   }
   .max-h-\[500px\] {
     max-height: 500px;
+  }
+  .max-h-\[calc\(100vh-362px\)\] {
+    max-height: calc(100vh - 362px);
+  }
+  .max-h-full {
+    max-height: 100%;
   }
   .min-h-48 {
     min-height: calc(var(--spacing) * 48);
@@ -1274,6 +1282,11 @@
       padding-inline: calc(var(--spacing) * 12);
     }
   }
+  .sm\:px-24 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 24);
+    }
+  }
   .md\:block {
     @media (width >= 600px) {
       display: block;
@@ -1339,9 +1352,24 @@
       padding-inline: calc(var(--spacing) * 12);
     }
   }
+  .md\:px-24 {
+    @media (width >= 600px) {
+      padding-inline: calc(var(--spacing) * 24);
+    }
+  }
   .md\:pt-12 {
     @media (width >= 600px) {
       padding-top: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:px-24 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 24);
+    }
+  }
+  .\@min-xs\:px-24 {
+    @container (width >= 20rem) {
+      padding-inline: calc(var(--spacing) * 24);
     }
   }
 }
