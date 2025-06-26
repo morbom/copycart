@@ -11,162 +11,130 @@
 
 <body class="min-h-screen flex justify-between bg-gray-200 max-w-[1400px] mx-auto my-0">
   <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
-  <div class="max-w-[600px] bg-white w-full pb-24">
-    <div class="grid grid-cols-3 items-center p-5">
-      <div>
-        <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
-          <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
-        </a>
+    <div class="max-w-[600px] bg-white w-full pb-24">
+      <div class="grid grid-cols-3 items-center p-5">
+        <div>
+          <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
+          </a>
+        </div>
+        <div class="flex justify-center items-center gap-2 font-medium text-xl">
+          Post details
+        </div>
+        <div class="flex justify-end items-center">
+          <button class="bg-gray-100 rounded-full p-2" id="comments">
+            <img src="./../assets/icons/link.svg" alt="link" class="size-5">
+          </button>
+        </div>
       </div>
-      <div class="flex justify-center items-center gap-2 font-medium text-xl">
-        Post details
-      </div>
-      <div class="flex justify-end items-center">
-        <a class="bg-gray-100 rounded-full p-2" id="comments" href="" target="_blank">
-          <img src="./../assets/icons/link.svg" alt="link" class="size-5">
-        </a>
-      </div>
-    </div>
 
-    <!-- ------------------ Follow Section ------------------ -->
-    <div class="flex justify-between items-center px-5">
-      <a href="" target="_blank" class="flex items-center gap-2">
-        <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
-          alt="Lisa Parker">
-        <div class="flex items-center gap-1">
-          <span>@Lisaprkr</span>
-          <img src="./../assets/icons/verified.svg" alt="verified">
+      <!-- ------------------ Follow Section ------------------ -->
+      <div class="flex justify-between items-center px-5">
+        <a href="" target="_blank" class="flex items-center gap-2">
+          <img class="size-12 rounded-full outline-2 outline-pink-400 outline-offset-2 object-cover"
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop"
+            alt="Lisa Parker">
+          <div class="flex items-center gap-1">
+            <span>@Lisaprkr</span>
+            <img src="./../assets/icons/verified.svg" alt="verified">
+          </div>
+        </a>
+        <a class="rounded-full px-8 text-white bg-black" href="" target="_blank">Follow</a>
+      </div>
+
+      <!-- ------------------ Follow Section ------------------ -->
+      <a href="" target="_blank" class="flex p-5 relative">
+        <img src="./../assets/images/6.png" class="aspect-square w-full" alt="6.png">
+        <div class="absolute left-8 top-9 flex items-center gap-1.5">
+          <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
+          <span class="text-white">2d ago</span>
+        </div>
+        <div
+          class="absolute right-8 top-8 flex justify-center items-center flex-none gap-1.5 size-9 bg-[#FAFAFA66] rounded-full">
+          <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+        </div>
+        <div
+          class="absolute left-8 bottom-8 flex justify-center items-center text-white gap-1.5 px-4 py-2 bg-[#FAFAFA66] rounded-full">
+          <img src="./../assets/icons/cart-white.svg" alt="cart-white">
+          <span>8 Items</span>
+        </div>
+        <div class="absolute right-8 bottom-40 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/heart-white.svg" class="size-5" alt="heart-white">
+          <span>151k</span>
+        </div>
+        <div class="absolute right-8 bottom-24 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/bookmark.svg" class="size-5" alt="bookmark">
+          <span>11k</span>
+        </div>
+        <div class="absolute right-8 bottom-8 text-white flex flex-col items-center gap-1 w-8">
+          <img src="./../assets/icons/message.svg" class="size-5" alt="message">
+          <span>90k</span>
         </div>
       </a>
-      <a class="rounded-full px-8 text-white bg-black" href="" target="_blank">Follow</a>
-    </div>
 
-    <!-- ------------------ Follow Section ------------------ -->
-    <a href="" target="_blank" class="flex p-5 relative">
-      <img src="./../assets/images/6.png" class="aspect-square w-full" alt="6.png">
-      <div class="absolute left-8 top-9 flex items-center gap-1.5">
-        <img src="./../assets/icons/instagram-white.svg" alt="instagram-white">
-        <span class="text-white">2d ago</span>
-      </div>
-      <div
-        class="absolute right-8 top-8 flex justify-center items-center flex-none gap-1.5 size-9 bg-[#FAFAFA66] rounded-full">
-        <img src="./../assets/icons/cart-white.svg" alt="cart-white">
-      </div>
-      <div
-        class="absolute left-8 bottom-8 flex justify-center items-center text-white gap-1.5 px-4 py-2 bg-[#FAFAFA66] rounded-full">
-        <img src="./../assets/icons/cart-white.svg" alt="cart-white">
-        <span>8 Items</span>
-      </div>
-      <div class="absolute right-8 bottom-40 text-white flex flex-col items-center gap-1 w-8">
-        <img src="./../assets/icons/heart-white.svg" class="size-5" alt="heart-white">
-        <span>151k</span>
-      </div>
-      <div class="absolute right-8 bottom-24 text-white flex flex-col items-center gap-1 w-8">
-        <img src="./../assets/icons/bookmark.svg" class="size-5" alt="bookmark">
-        <span>11k</span>
-      </div>
-      <div class="absolute right-8 bottom-8 text-white flex flex-col items-center gap-1 w-8">
-        <img src="./../assets/icons/message.svg" class="size-5" alt="message">
-        <span>90k</span>
-      </div>
-    </a>
-
-    <!-- ------------------ Items in this Post Section ------------------ -->
-    <div class="grid gap-2 mt-8">
-      <div class="flex justify-between items-center px-5">
-        <p class="font-semibold text-xl">Items in this Post</p>
-        <a class="text- underline underline-offset-2" href="" target="_blank">Add all to Cart</a>
-      </div>
-      <div class="grid grid-cols-2 gap-2 px-5">
-        <div class="flex flex-col gap-2">
-          <a href="" target="_blank">
-            <img src="./../assets/images/2.png" alt="2.png">
-          </a>
-          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-          <a href="" target="_blank">
-            <sup>$</sup>
-            <span class="font-medium text-2xl">230</span>
-            <sup>99</sup>
-          </a>
-          <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
+      <!-- ------------------ Items in this Post Section ------------------ -->
+      <div class="grid gap-2 mt-8">
+        <div class="flex justify-between items-center px-5">
+          <p class="font-semibold text-xl">Items in this Post</p>
+          <a class="text- underline underline-offset-2" href="" target="_blank">Add all to Cart</a>
         </div>
-        <div class="flex flex-col gap-2">
-          <a href="" target="_blank">
-            <img src="./../assets/images/2.png" alt="2.png">
-          </a>
-          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-          <a href="" target="_blank">
-            <sup>$</sup>
-            <span class="font-medium text-2xl">230</span>
-            <sup>99</sup>
-          </a>
-          <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <a href="" target="_blank">
-            <img src="./../assets/images/2.png" alt="2.png">
-          </a>
-          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-          <a href="" target="_blank">
-            <sup>$</sup>
-            <span class="font-medium text-2xl">230</span>
-            <sup>99</sup>
-          </a>
-          <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
-        </div>
-        <div class="flex flex-col gap-2">
-          <a href="" target="_blank">
-            <img src="./../assets/images/2.png" alt="2.png">
-          </a>
-          <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
-          <a href="" target="_blank">
-            <sup>$</sup>
-            <span class="font-medium text-2xl">230</span>
-            <sup>99</sup>
-          </a>
-          <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ------------------ Search Modal ------------------ -->
-    <div id="search-modal" class="fixed inset-0 z-50 items-end justify-center bg-black/40 backdrop-blur-md hidden">
-      <div class="grid bg-white rounded-t-lg shadow-lg w-full max-w-md px-5 py-16 relative">
-        <button class="bg-[#7878801F] flex items-center justify-center rounded-full absolute right-4 top-4 size-8">
-          <img src="./../assets/icons/close-gray.svg" alt="close-gray">
-        </button>
-        <input type="text" class="bg-[#7676801F] placeholder:text-[#3C3C4399] py-2 px-4 rounded-xl" id="search-input"
-          placeholder="Search" />
-        <div class="grid grid-cols-4 gap-2">
-          <div class="flex flex-col items-center py-4">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
-            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+        <div class="grid grid-cols-2 gap-2 px-5">
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
           </div>
-          <div class="flex flex-col items-center py-4">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
-            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
           </div>
-          <div class="flex flex-col items-center py-4">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
-            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="bg-black text-center text-white rounded-full py-2" href="" target="_blank">Add to Cart</a>
           </div>
-          <div class="flex flex-col items-center py-4">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
-            <p class="text-xs text-center">Sandy Wilder Cheng</p>
-          </div>
-          <div class="flex flex-col items-center py-4">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-16" />
-            <p class="text-xs text-center">Sandy Wilder Cheng</p>
+          <div class="flex flex-col gap-2">
+            <a href="" target="_blank">
+              <img src="./../assets/images/2.png" alt="2.png">
+            </a>
+            <p class="font-light leading-3.5 text-sm">Lorem ipsum dolor sit amet consectetur...</p>
+            <a href="" target="_blank">
+              <sup>$</sup>
+              <span class="font-medium text-2xl">230</span>
+              <sup>99</sup>
+            </a>
+            <a class="border text-center rounded-full py-2" href="" target="_blank">See options</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
   <!-- ------------------ Comments Modal ------------------ -->
-  <div id="comments-modal" class="fixed inset-0 z-50 items-end justify-center max-w-[396px] mx-auto hidden">
-    <div class="grid bg-white rounded-t-lg shadow-2xl w-full max-w-md px-5 py-8 relative max-h-[500px] z-50">
+  <div id="comments-modal" class="fixed inset-0 z-50 items-end justify-center max-w-[560px] mx-auto hidden">
+    <div class="grid bg-white rounded-t-lg shadow-2xl w-full px-5 py-8 relative max-h-[500px] z-50">
       <p class="font-semibold text-2xl">Comments</p>
       <div class="flex grid-1 my-3.5 gap-2">
         <div class="py-2.5 px-7 rounded-full bg-black text-white">Top</div>
@@ -286,22 +254,6 @@
   </nav>
 
   <script>
-    /* ------------------ Search Modal ------------------ */
-    const searchBtn = document.getElementById('search');
-    const searchModal = document.getElementById('search-modal');
-
-    searchBtn.addEventListener('click', () => {
-      searchModal.classList.remove('hidden');
-      searchModal.classList.add('flex');
-    });
-
-    searchModal.addEventListener('click', (e) => {
-      if (e.target === searchModal) {
-        searchModal.classList.add('hidden');
-        searchModal.classList.remove('flex');
-      }
-    });
-
     /* ------------------ Comments Modal ------------------ */
     const commentsBtn = document.getElementById('comments');
     const commentsModal = document.getElementById('comments-modal');
