@@ -41,7 +41,7 @@
           </a>
           <div class="grid">
             <a href="" target="_blank" class="leading-5 font-medium">Luna Fashion Store</a>
-            <a href="" target="_blank" class="text-sm text-[#0E0D0D] underline leading-5">Setup rules</a>
+            <div class="text-sm text-[#0E0D0D] underline leading-5 cursor-pointer" id="rule-setup">Setup rules</div>
           </div>
         </div>
         <label class="inline-flex items-center cursor-pointer">
@@ -49,16 +49,20 @@
         </label>
       </div>
 
-      <div class="grid grid-cols-2 gap-2">
-        <div>
+      <div class="grid grid-cols-2 gap-2 mt-4">
+        <div class="relative">
           <img src="./../assets/images/2.png" alt="2.png" />
           <p>Lorem ipsum dolor sit amet consectetur...</p>
           <button class="rounded-full py-2 bg-black text-white w-full">Add to Closet</button>
         </div>
-        <div>
+        <div class="relative">
           <img src="./../assets/images/2.png" alt="2.png" />
           <p>Lorem ipsum dolor sit amet consectetur...</p>
-          <div class="flex items-center gap-2 p-2">
+          <div
+            class="rounded-full size-8 flex-none bg-[#FAFAFA66] flex items-center justify-center absolute right-2 top-2">
+            <img src="./../assets/icons/eye.svg" alt="eye" />
+          </div>
+          <div class="flex items-center gap-2 p-2 cursor-pointer" id="public">
             <img src="./../assets/icons/check-red.svg" alt="check-red" />
             <span class="text-brand-red">Added to Closet</span>
           </div>
@@ -87,18 +91,36 @@
 
 
   <!-- New Contact Modal -->
-  <div id="new-contact-modal"
+  <div id="rule-setup-modal"
     class="fixed inset-0 z-50 items-center justify-center bg-black/40 backdrop-blur-md hidden px-5">
     <div class="bg-white rounded-[20px] shadow-lg w-full max-w-md py-4 px-2 relative">
       <button id="close-modal-btn" class="absolute top-6 right-4 text-gray-400 hover:text-gray-700 cursor-pointer">
         <img src="./../assets/icons/close.svg" alt="close">
       </button>
-      <p class="text-xl mb-4 text-center">New Contact</p>
+      <p class="text-xl mb-4 text-center">Rule setup for Nike</p>
       <div id="modal-content" class="flex flex-col items-center w-full gap-2.5 pt-8 pb-4">
-        <input type="text" placeholder="Name*" id="name" class="rounded-full bg-[#0E0D0D1A] w-full py-3 px-4" />
-        <input type="text" placeholder="Email*" id="email" class="rounded-full bg-[#0E0D0D1A] w-full py-3 px-4" />
-        <input type="text" placeholder="Phone*" id="phone" class="rounded-full bg-[#0E0D0D1A] w-full py-3 px-4" />
-        <button class="rounded-full bg-black text-white py-3 w-full mt-8 cursor-pointer">Add</button>
+        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer">
+          Always add item from Nike to Closet
+        </button>
+        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+          <img src="./../assets/icons/eye-white.svg" alt="eye-white" />
+          <span>Make all Nike items Public</span>
+        </button>
+        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+          <img src="./../assets/icons/community.svg" alt="community" />
+          <span>Make all Nike items Community</span>
+        </button>
+        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+          <img src="./../assets/icons/friends.svg" alt="friends" />
+          <span>Make all Nike items Friends</span>
+        </button>
+        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+          <img src="./../assets/icons/eye-cross.svg" alt="eye-cross" />
+          <span>Make all Nike items Private</span>
+        </button>
+        <button class="rounded-full bg-brand-red text-white py-3 w-full cursor-pointer">
+          Never add  item from Nike to Closet
+        </button>
       </div>
     </div>
   </div>
@@ -126,13 +148,12 @@
   </nav>
 
   <script>
-    // Select all notification rows
-    const newContactBtn = document.getElementById('new-contact');
-    const modal = document.getElementById('new-contact-modal');
+    const ruleSetupBtn = document.getElementById('rule-setup');
+    const modal = document.getElementById('rule-setup-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
     const modalContent = document.getElementById('modal-content');
 
-    newContactBtn.addEventListener('click', () => {
+    ruleSetupBtn.addEventListener('click', () => {
       modal.classList.remove('hidden');
       modal.classList.add('flex');
     });

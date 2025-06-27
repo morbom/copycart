@@ -236,6 +236,9 @@
   .top-2 {
     top: calc(var(--spacing) * 2);
   }
+  .top-2\.5 {
+    top: calc(var(--spacing) * 2.5);
+  }
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
@@ -250,6 +253,24 @@
   }
   .top-9 {
     top: calc(var(--spacing) * 9);
+  }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
+  .top-14 {
+    top: calc(var(--spacing) * 14);
+  }
+  .top-16 {
+    top: calc(var(--spacing) * 16);
+  }
+  .top-18 {
+    top: calc(var(--spacing) * 18);
+  }
+  .top-24 {
+    top: calc(var(--spacing) * 24);
+  }
+  .top-\[60px\] {
+    top: 60px;
   }
   .-right-0 {
     right: calc(var(--spacing) * -0);
@@ -278,6 +299,24 @@
   .right-8 {
     right: calc(var(--spacing) * 8);
   }
+  .right-\[calc\(50\%-24px\)\] {
+    right: calc(50% - 24px);
+  }
+  .right-\[calc\(50\%-28px\)\] {
+    right: calc(50% - 28px);
+  }
+  .right-\[calc\(50\%-32px\)\] {
+    right: calc(50% - 32px);
+  }
+  .right-\[calc\(50\%-36px\)\] {
+    right: calc(50% - 36px);
+  }
+  .right-\[calc\(50\%-48px\)\] {
+    right: calc(50% - 48px);
+  }
+  .right-\[calc\(50\%-80px\)\] {
+    right: calc(50% - 80px);
+  }
   .right-auto {
     right: auto;
   }
@@ -292,6 +331,12 @@
   }
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
   }
   .bottom-8 {
     bottom: calc(var(--spacing) * 8);
@@ -332,8 +377,14 @@
   .z-50 {
     z-index: 50;
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .col-span-3 {
     grid-column: span 3 / span 3;
+  }
+  .col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .float-end {
     float: inline-end;
@@ -392,6 +443,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -403,6 +457,9 @@
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -511,6 +568,10 @@
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
   }
+  .size-20 {
+    width: calc(var(--spacing) * 20);
+    height: calc(var(--spacing) * 20);
+  }
   .size-24 {
     width: calc(var(--spacing) * 24);
     height: calc(var(--spacing) * 24);
@@ -572,6 +633,9 @@
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -776,6 +840,9 @@
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
   }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .gap-x-6 {
     column-gap: calc(var(--spacing) * 6);
   }
@@ -899,11 +966,17 @@
   .border-\[\#D9D9D9\] {
     border-color: #D9D9D9;
   }
+  .border-\[\#DFE2E8\] {
+    border-color: #DFE2E8;
+  }
   .border-\[\#F05A60\] {
     border-color: #F05A60;
   }
   .border-\[\#F6888E4D\] {
     border-color: #F6888E4D;
+  }
+  .border-\[\#FF000A\] {
+    border-color: #FF000A;
   }
   .border-brand-red {
     border-color: var(--color-brand-red);
@@ -992,11 +1065,17 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -1018,6 +1097,9 @@
   }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -1136,6 +1218,9 @@
   .text-center {
     text-align: center;
   }
+  .text-right {
+    text-align: right;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1162,6 +1247,12 @@
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
+  .text-\[34px\] {
+    font-size: 34px;
   }
   .text-\[54px\] {
     font-size: 54px;
@@ -1213,8 +1304,14 @@
   .text-\[\#0E0D0D\] {
     color: #0E0D0D;
   }
+  .text-\[\#6F7380\] {
+    color: #6F7380;
+  }
   .text-\[\#00000066\] {
     color: #00000066;
+  }
+  .text-\[\#DFE2E8\] {
+    color: #DFE2E8;
   }
   .text-\[\#FF000A\] {
     color: #FF000A;
