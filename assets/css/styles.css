@@ -241,6 +241,9 @@
   .top-2\.5 {
     top: calc(var(--spacing) * 2.5);
   }
+  .top-3 {
+    top: calc(var(--spacing) * 3);
+  }
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
@@ -258,6 +261,9 @@
   }
   .top-\[60px\] {
     top: 60px;
+  }
+  .top-auto {
+    top: auto;
   }
   .-right-0 {
     right: calc(var(--spacing) * -0);
@@ -321,6 +327,9 @@
   }
   .bottom-40 {
     bottom: calc(var(--spacing) * 40);
+  }
+  .bottom-auto {
+    bottom: auto;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);

@@ -53,8 +53,8 @@
               <span class="font-medium text-2xl">230</span>
               <sup>99</sup>
             </a>
-            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center">
-              <img src="./../assets/icons/eye-cross-red.svg" alt="eye-cross-red" />
+            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center cursor-pointer eye-toggle" data-item-id="1">
+              <img src="./../assets/icons/eye.svg" alt="eye" class="eye-icon" />
             </div>
             <div class="flex items-center gap-2 py-2">
               <img src="./../assets/icons/check-red.svg" alt="check-red" />
@@ -83,8 +83,8 @@
               <span class="font-medium text-2xl">230</span>
               <sup>99</sup>
             </div>
-            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center clickable cursor-pointer">
-              <img src="./../assets/icons/eye.svg" alt="eye" />
+            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center cursor-pointer eye-toggle" data-item-id="2">
+              <img src="./../assets/icons/eye.svg" alt="eye" class="eye-icon" />
             </div>
             <div class="flex items-center gap-2 py-2">
               <img src="./../assets/icons/check-red.svg" alt="check-red" />
@@ -105,6 +105,41 @@
     clickables.forEach(clickable => clickable.addEventListener('click', () => {
       window.open('#', '_blank');
     }))
+
+    // Eye toggle functionality
+    const eyeToggles = document.querySelectorAll('.eye-toggle');
+    
+    eyeToggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const eyeIcon = toggle.querySelector('.eye-icon');
+        const itemId = toggle.getAttribute('data-item-id');
+        const addedToCloset = toggle.parentElement.querySelector('.added-to-closet');
+        
+        // Toggle between eye and eye-cross-red
+        if (eyeIcon.src.includes('eye.svg')) {
+          // Change to eye-cross-red (hidden state)
+          eyeIcon.src = './../assets/icons/eye-cross-red.svg';
+          eyeIcon.alt = 'eye-cross-red';
+          
+          // Show "Added to Closet" message
+          if (addedToCloset) {
+            addedToCloset.style.display = 'flex';
+          }
+        } else {
+          // Change back to eye (visible state)
+          eyeIcon.src = './../assets/icons/eye.svg';
+          eyeIcon.alt = 'eye';
+          
+          // Hide "Added to Closet" message
+          if (addedToCloset) {
+            addedToCloset.style.display = 'none';
+          }
+        }
+      });
+    });
   </script>
 </body>
 

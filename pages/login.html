@@ -25,20 +25,20 @@
           placeholder="Email" id="email" />
         <label for="email" class="text-[#FF000A]">Lorem ipsum dolor sit amet consectetur.</label>
         <div class="relative">
-          <input type="text" class="rounded-full w-full px-4 py-2.5 bg-[#0E0D0D1A] border border-[#0000000D]"
+          <input type="password" class="rounded-full w-full px-4 py-2.5 bg-[#0E0D0D1A] border border-[#0000000D]"
             placeholder="Password" id="password" />
-          <img src="./../assets/icons/eye-cross-black.svg" alt="eye-cross-black" class="absolute right-4 top-2.5" />
+          <img src="./../assets/icons/eye-cross-black.svg" alt="eye-cross-black" class="absolute right-4 top-2.5 cursor-pointer password-toggle" />
         </div>
-        <p class="text-right">Forgot password?</p>
+        <p class="text-right cursor-pointer clickable">Forgot password?</p>
       </div>
 
       <a class="bg-black text-white text-center rounded-full w-full py-2.5" href="" target="_blank">
         Create account
       </a>
-      <a class="text-sm" href="" target="_blank">
+      <div>
         <span>By signing up, you agree to our</span>
-        <span class="font-medium">Terms, Privacy Policy and Cookie use</span>
-      </a>
+        <span class="font-medium clickable cursor-pointer">Terms, Privacy Policy and Cookie use</span>
+      </div>
 
       <div class="flex items-center gap-4 w-full mt-3">
         <hr class="border-b border-t-0 flex-1 border-[#DFE2E8]" />
@@ -59,6 +59,30 @@
     clickables.forEach(clickable => clickable.addEventListener('click', () => {
       window.open('#', '_blank');
     }))
+
+    // Password toggle functionality
+    const passwordToggle = document.querySelector('.password-toggle');
+    const passwordInput = document.getElementById('password');
+    
+    passwordToggle.addEventListener('click', () => {
+      const currentType = passwordInput.type;
+      
+      if (currentType === 'password') {
+        // Show password
+        passwordInput.type = 'text';
+        passwordToggle.src = './../assets/icons/eye.svg';
+        passwordToggle.alt = 'eye';
+        passwordToggle.classList.remove('top-2.5');
+        passwordToggle.classList.add('top-3');
+      } else {
+        // Hide password
+        passwordInput.type = 'password';
+        passwordToggle.src = './../assets/icons/eye-cross-black.svg';
+        passwordToggle.alt = 'eye-cross-black';
+        passwordToggle.classList.add('top-2.5');
+        passwordToggle.classList.remove('top-3');
+      }
+    });
   </script>
 </body>
 
