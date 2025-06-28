@@ -83,7 +83,7 @@
               <span class="font-medium text-2xl">230</span>
               <sup>99</sup>
             </div>
-            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center">
+            <div class="bg-[#FAFAFA66] rounded-full size-8 absolute right-2 top-2 flex items-center justify-center clickable cursor-pointer">
               <img src="./../assets/icons/eye.svg" alt="eye" />
             </div>
             <div class="flex items-center gap-2 py-2">
@@ -91,11 +91,21 @@
               <span class="text-brand-red">Added to Closet</span>
             </div>
           </div>
-          <button class="py-2.5 col-span-2 rounded-full w-full bg-black text-white sticky bottom-4">Next</button>
+          <button
+            class="py-2.5 col-span-2 rounded-full w-full bg-black text-white sticky bottom-4 cursor-pointer clickable">
+            Next
+          </button>
         </div>
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

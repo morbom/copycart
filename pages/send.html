@@ -34,38 +34,47 @@
         <p class="mt-5 font-medium text-[20px]">Choose a friend</p>
         <div class="grid grid-cols-4 gap-x-3 gap-y-4">
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2 relative">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none border border-brand-red" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none border border-brand-red clickable cursor-pointer" />
             <p>Greg</p>
-            <div class="size-5 rounded-full flex-none flex items-center justify-center absolute right-[calc(50%-36px)] top-[60px] bg-brand-red">
+            <div
+              class="size-5 rounded-full flex-none flex items-center justify-center absolute right-[calc(50%-36px)] top-[60px] bg-brand-red">
               <img src="./../assets/icons/check-white.svg" alt="check-white" />
             </div>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
         </div>
@@ -73,6 +82,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

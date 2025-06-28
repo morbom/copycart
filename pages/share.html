@@ -38,46 +38,59 @@
         <p class="mt-5 font-medium text-[20px]">Share to contacts</p>
         <div class="grid grid-cols-4 gap-x-3 gap-y-4">
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2 relative">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none border border-brand-red" />
+            <img src="./../assets/images/7.png" alt="7.png"
+              class="size-20 rounded-full flex-none border border-brand-red cursor-pointer clickable" />
             <p>Greg</p>
-            <div class="size-5 rounded-full flex-none flex items-center justify-center absolute right-[calc(50%-36px)] top-[60px] bg-brand-red">
+            <div
+              class="size-5 rounded-full flex-none flex items-center justify-center absolute right-[calc(50%-36px)] top-[60px] bg-brand-red">
               <img src="./../assets/icons/check-white.svg" alt="check-white" />
             </div>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
           <div class="flex flex-col items-center gap-2">
-            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none" />
+            <img src="./../assets/images/7.png" alt="7.png" class="size-20 rounded-full flex-none cursor-pointer clickable" />
             <p>Greg</p>
           </div>
         </div>
-        <button class="py-2.5 col-span-4 rounded-full w-full bg-black text-white sticky bottom-4 mt-4">Send</button>
-        <button class="py-2.5 col-span-4 rounded-full w-full border sticky bottom-4 mt-4">Skip for now</button>
+        <button class="py-2.5 col-span-4 rounded-full w-full bg-black text-white sticky bottom-4 mt-4 cursor-pointer clickable">
+          Send
+        </button>
+        <button class="py-2.5 col-span-4 rounded-full w-full border sticky bottom-4 mt-4 cursor-pointer clickable">
+          Skip for now
+        </button>
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

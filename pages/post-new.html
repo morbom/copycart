@@ -35,10 +35,10 @@
             alt="Lisa Parker">
           <div class="flex items-center gap-1">
             <span>@Lisaprkr</span>
-            <img src="./../assets/icons/verified.svg" alt="verified">
+            <img src="./../assets/icons/verified.svg" alt="verified" />
           </div>
         </a>
-        <img src="./../assets/icons/settings.svg" class="cursor-pointer px-2" id="edit-post" alt="settings" />
+        <img src="./../assets/icons/settings.svg" class="cursor-pointer px-2 clickable" id="edit-post" alt="settings" />
       </div>
 
       <!-- ------------------ Follow Section ------------------ -->
@@ -187,6 +187,11 @@
         editPostModal.classList.remove('flex');
       }
     });
+
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
   </script>
 </body>
 

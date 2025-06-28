@@ -58,11 +58,19 @@
           </div>
         </div>
 
-        <button class="w-[560px] py-2.5 rounded-full bg-black text-white fixed bottom-40">Confirm</button>
-        <button class="w-[560px] py-2.5 rounded-full border fixed bottom-24">Cancel</button>
+        <button
+          class="w-[560px] py-2.5 rounded-full bg-black text-white fixed bottom-40 clickable cursor-pointer">Confirm</button>
+        <button class="w-[560px] py-2.5 rounded-full border fixed bottom-24 clickable cursor-pointer">Cancel</button>
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@
     <div
       class="max-w-[600px] bg-white w-full flex flex-col items-center justify-between px-5 gap-2 pb-24 h-full relative">
       <div class="grid grid-cols-5 w-full">
-        <div class="flex rounded-full bg-gray-100 items-center justify-center size-7 flex-none">
+        <div class="flex rounded-full bg-gray-100 items-center justify-center size-7 flex-none clickable cursor-pointer">
           <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" />
         </div>
 
@@ -26,9 +26,10 @@
       <div class="flex flex-col items-center flex-1 gap-4 w-full mt-24">
         <img src="./../assets/icons/google.svg" class="size-9" alt="google">
         <p class="text-xl">Sync with Google Contacts</p>
-        <p class="text-sm font-light text-center">To import your contacts, we need access to your Google account. This allows us to
+        <p class="text-sm font-light text-center">To import your contacts, we need access to your Google account. This
+          allows us to
           sync your contacts and keep them up to date.</p>
-        <button class="bg-[#0E0D0DB2] rounded-full py-3.5 px-5 text-white flex gap-2 items-center justify-center">
+        <button class="bg-[#0E0D0DB2] rounded-full py-3.5 px-5 text-white flex gap-2 items-center justify-center clickable cursor-pointer">
           <img src="./../assets/icons/google-white.svg" alt="google-white">
           <span>Sync with Google Contacts</span>
         </button>
@@ -57,6 +58,13 @@
       </a>
     </div>
   </nav>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

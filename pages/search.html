@@ -33,12 +33,17 @@
         <div class="text-center">
           <p class="text-xl mb-4">Examples of requests</p>
           <div class="flex flex-wrap justify-center gap-1 font-light text-sm">
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">Posts about remote jobs</span>
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">Events this weekend</span>
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">Nike under $100</span>
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">UX designers in New York</span>
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">Coffee shops near me</span>
-            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2">Events this weekend</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Posts about remote
+              jobs</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Events this
+              weekend</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Nike under $100</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">UX designers in New
+              York</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Coffee shops near
+              me</span>
+            <span class="bg-[#F6888E4D] rounded-full px-5 pt-2.5 pb-2 cursor-pointer clickable">Events this
+              weekend</span>
           </div>
         </div>
       </div>
@@ -66,6 +71,13 @@
       </a>
     </div>
   </nav>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

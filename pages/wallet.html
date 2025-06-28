@@ -13,13 +13,18 @@
   <div class="bg-white w-full flex flex-col items-center md:max-w-[1400px] max-w-[600px]">
     <div class="max-w-[600px] bg-white w-full pb-24">
       <div class="grid grid-cols-5 items-center p-5">
-        <div>
+        <div class="flex items-center">
           <a class="bg-gray-100 rounded-full size-7 flex items-center justify-center" href="" target="_blank">
             <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" class="w-2 h-4">
           </a>
         </div>
         <div class="flex justify-center items-center gap-2 font-medium text-xl col-span-3">
           Wallet
+        </div>
+        <div class="flex justify-end">
+          <a class="bg-gray-100 rounded-full size-9 flex items-center justify-center" href="" target="_blank">
+            <img src="./../assets/icons/alarm.svg" alt="alarm" class="w-4">
+          </a>
         </div>
       </div>
 
@@ -37,8 +42,8 @@
           <p class="font-semibold">$234.56</p>
         </div>
         <div class="grid grid-cols-2 gap-1 mt-9">
-          <button class="bg-black text-white rounded-full py-2">Withdraw earnings</button>
-          <button class="flex items-center justify-center gap-1 rounded-full border py-2">
+          <button class="bg-black text-white rounded-full py-2 clickable cursor-pointer">Withdraw earnings</button>
+          <button class="flex items-center justify-center gap-1 rounded-full border py-2 clickable cursor-pointer">
             <img src="./../assets/icons/bucket.svg" alt="bucket" />
             <span>Send in CopyCart</span>
           </button>
@@ -53,13 +58,13 @@
         <!-- ------------------ Transactions Tab ------------------ -->
         <div id="Transactions" class="tab-panel py-4 grid gap-4">
           <div class="flex gap-2 overflow-x-auto">
-            <div class="py-2 px-4 bg-brand-red text-white rounded-full">Orders</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Withdrawn</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Send</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Cashbacks</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Withdrawn</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Send</div>
-            <div class="py-2 px-4 bg-gray-100 rounded-full">Cashbacks</div>
+            <div class="py-2 px-4 bg-brand-red text-white rounded-full cursor-pointer clickable">Orders</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Withdrawn</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Send</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Cashbacks</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Withdrawn</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Send</div>
+            <div class="py-2 px-4 bg-gray-100 rounded-full cursor-pointer clickable">Cashbacks</div>
           </div>
 
           <div class="relative w-full">
@@ -73,7 +78,7 @@
             <p>Luna Fashion Store</p>
           </div>
 
-          <div class="flex gap-2 border-b border-[#00000033] pb-4">
+          <div class="flex gap-2 border-b border-[#00000033] pb-4 clickable cursor-pointer">
             <div>
               <img src="./../assets/images/4.png" class="size-16" alt="4.png" />
             </div>
@@ -103,7 +108,7 @@
             <p>Luna Fashion Store</p>
           </div>
 
-          <div class="flex gap-2 border-b border-[#00000033] pb-4">
+          <div class="flex gap-2 border-b border-[#00000033] pb-4 clickable cursor-pointer">
             <div>
               <img src="./../assets/images/4.png" class="size-16" alt="4.png" />
             </div>
@@ -132,7 +137,7 @@
 
         <!-- ------------------ Payment methods Tab ------------------ -->
         <div id="PaymentMethods" class="tab-panel py-4 gap-4 hidden">
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <div class="size-4 rounded-full bg-black flex items-center justify-center">
                 <img src="./../assets/icons/check-white.svg" alt="check-white" />
@@ -141,21 +146,21 @@
             </div>
             <img src="./../assets/icons/delete.svg" alt="delete" />
           </div>
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <div class="size-4 rounded-full border flex items-center justify-center"></div>
               <p>VISA card 1234</p>
             </div>
             <img src="./../assets/icons/delete.svg" alt="delete" />
           </div>
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <div class="size-4 rounded-full border flex items-center justify-center"></div>
               <p>American Express 8899</p>
             </div>
             <img src="./../assets/icons/delete.svg" alt="delete" />
           </div>
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-4 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <div class="size-4 rounded-full border flex items-center justify-center"></div>
               <div class="flex gap-2">
@@ -164,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <img src="./../assets/icons/plus.svg" alt="plus" />
               <div class="flex gap-2">
@@ -172,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full">
+          <div class="flex justify-between items-center rounded-full border bg-[#FAFAFA] h-14 px-3 w-full cursor-pointer clickable">
             <div class="flex items-center gap-2">
               <img src="./../assets/icons/plus.svg" alt="plus" />
               <div class="flex gap-2">
@@ -199,10 +204,10 @@
           panel.classList.remove('grid');
           panel.classList.add('hidden');
         });
-        
+
         // Activate the clicked button and show the corresponding panel
         button.classList.add('border-b-2', 'border-brand-red', 'text-brand-red');
-        
+
         const targetPanelId = button.dataset.tabTarget;
         const targetPanel = document.querySelector(targetPanelId);
         if (targetPanel) {
@@ -211,6 +216,11 @@
         }
       });
     });
+
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
   </script>
 </body>
 
