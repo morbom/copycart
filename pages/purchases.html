@@ -50,12 +50,12 @@
       </div>
 
       <div class="grid grid-cols-2 gap-2 mt-4">
-        <div class="relative">
+        <div class="relative clickable cursor-pointer">
           <img src="./../assets/images/2.png" alt="2.png" />
           <p>Lorem ipsum dolor sit amet consectetur...</p>
           <button class="rounded-full py-2 bg-black text-white w-full">Add to Closet</button>
         </div>
-        <div class="relative">
+        <div class="relative clickable cursor-pointer">
           <img src="./../assets/images/2.png" alt="2.png" />
           <p>Lorem ipsum dolor sit amet consectetur...</p>
           <div
@@ -85,7 +85,7 @@
           <img src="./../assets/icons/arrow-up.svg" alt="arrow-up" />
         </label>
       </div>
-      <button class="rounded-full bg-black text-white py-4 w-full mt-8 cursor-pointer" id="new-contact">Save</button>
+      <button class="rounded-full bg-black text-white py-4 w-full mt-8 cursor-pointer clickable" id="new-contact">Save</button>
     </div>
   </div>
 
@@ -102,24 +102,28 @@
         <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer">
           Always add item from Nike to Closet
         </button>
-        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+        <button
+          class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
           <img src="./../assets/icons/eye-white.svg" alt="eye-white" />
           <span>Make all Nike items Public</span>
         </button>
-        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+        <button
+          class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
           <img src="./../assets/icons/community.svg" alt="community" />
           <span>Make all Nike items Community</span>
         </button>
-        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+        <button
+          class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
           <img src="./../assets/icons/friends.svg" alt="friends" />
           <span>Make all Nike items Friends</span>
         </button>
-        <button class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
+        <button
+          class="rounded-full bg-[#0E0D0DB2] text-white py-3 w-full cursor-pointer flex items-center justify-center gap-2">
           <img src="./../assets/icons/eye-cross.svg" alt="eye-cross" />
           <span>Make all Nike items Private</span>
         </button>
         <button class="rounded-full bg-brand-red text-white py-3 w-full cursor-pointer">
-          Never add  item from Nike to Closet
+          Never add item from Nike to Closet
         </button>
       </div>
     </div>
@@ -168,6 +172,11 @@
         modal.classList.add('hidden');
       }
     });
+
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
   </script>
 </body>
 

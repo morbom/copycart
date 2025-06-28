@@ -26,18 +26,30 @@
       <p class="text-3xl font-medium text-center">Choose up to three categories that represent what you want to see.</p>
 
       <div class="flex flex-wrap justify-center gap-2 w-full mt-6">
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Favorite Snacks 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Fragrances 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Bags 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Books 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Makeup & Beauty 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Home Decor 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Home Decor 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Accessories 🚀</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Tech ⌚</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Sports 🏅</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Hobbie 🏓</div>
-        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full">Shoes 👡</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Favorite Snacks 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Fragrances 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Bags
+          🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Books
+          🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Makeup & Beauty 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Home
+          Decor 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Home
+          Decor 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Accessories 🚀</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Tech
+          ⌚</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Sports 🏅</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">
+          Hobbie 🏓</div>
+        <div class="text-[20px] border flex justify-center items-center p-3 rounded-full clickable cursor-pointer">Shoes
+          👡</div>
       </div>
 
       <div class="absolute bottom-12 w-full max-w-150" id="social">
@@ -76,6 +88,11 @@
         modal.classList.remove('flex');
       }
     });
+
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
   </script>
 </body>
 
