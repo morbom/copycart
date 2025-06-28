@@ -14,7 +14,8 @@
     <div
       class="max-w-[600px] bg-white w-full flex flex-col items-center justify-between px-5 gap-2 pb-24 h-full relative">
       <div class="grid grid-cols-3 w-full">
-        <div class="flex rounded-full bg-gray-100 items-center justify-center size-7 flex-none">
+        <div
+          class="flex rounded-full bg-gray-100 items-center justify-center size-7 flex-none clickable cursor-pointer">
           <img src="./../assets/icons/arrow-left.svg" alt="arrow-left" />
         </div>
 
@@ -49,11 +50,11 @@
           <hr class="border-b border-t-0 flex-1 border-[#00000066]" />
         </div>
         <div class="flex gap-2">
-          <div class="w-10 flex-none">
+          <div class="w-10 flex-none clickable cursor-pointer">
             <img src="./../assets/icons/ai-assistant.svg" alt="ai-assistant">
           </div>
           <div class="flex flex-col gap-1.5">
-            <p class="text-[#0E0D0D80]">AI Assistant</p>
+            <p class="text-[#0E0D0D80] clickable cursor-pointer">AI Assistant</p>
             <div class="p-2.5 rounded-[20px] bg-[#0E0D0D1A] w-fit float-end">
               Lorem ipsum dolor sit amet consectetur. Massa pulvinar amet diam sed faucibus sit.
             </div>
@@ -151,6 +152,13 @@
       </a>
     </div>
   </nav>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

@@ -47,12 +47,19 @@
       </div>
 
       <div class="flex w-full justify-evenly mt-5">
-        <img src="./../assets/icons/google-circle.svg" alt="google-circle" />
-        <img src="./../assets/icons/facebook-circle.svg" alt="facebook-circle" />
-        <img src="./../assets/icons/apple-circle.svg" alt="apple-circle" />
+        <img src="./../assets/icons/google-circle.svg" class="clickable cursor-pointer" alt="google-circle" />
+        <img src="./../assets/icons/facebook-circle.svg" class="clickable cursor-pointer" alt="facebook-circle" />
+        <img src="./../assets/icons/apple-circle.svg" class="clickable cursor-pointer" alt="apple-circle" />
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

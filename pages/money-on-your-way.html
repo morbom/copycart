@@ -26,12 +26,19 @@
           Most withdrawals arrive within a few minutes, but depending on your bank, it may take 1-2 business days.
         </div>
 
-        <button class="rounded-full bg-black text-white py-3 w-full mt-4">
+        <button class="rounded-full bg-black text-white py-3 w-full mt-4 clickable cursor-pointer">
           Go To Feed
         </button>
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>

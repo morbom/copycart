@@ -28,7 +28,7 @@
 
       <div class="items-center pt-5 px-5 max-w-[450px] w-full">
         <p class="font-semibold">Delivery</p>
-        <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2">
+        <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2 cursor-pointer clickable">
           <div class="flex gap-2 items-center">
             <img src="./../assets/icons/location.svg" alt="location" />
             <span class="font-light text-sm">123 Broadway, New York, NY 10001</span>
@@ -39,23 +39,23 @@
 
       <div class="items-center pt-5 px-5 max-w-[450px] w-full">
         <p class="font-semibold">Payment method</p>
-        <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2">
+        <button class="border bg-[#FAFAFA] rounded-full py-4 flex justify-between px-6 w-full mt-2 cursor-pointer clickable">
           <div class="flex gap-2 items-center">
             <img src="./../assets/icons/visa.svg" alt="visa" />
             <span class="font-light text-sm">**** 3528</span>
           </div>
           <img src="./../assets/icons/arrow-right.svg" alt="arrow-right" />
         </button>
-        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2">
+        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2 cursor-pointer clickable">
           <div>
             <div class="flex gap-2 items-center">
               <img src="./../assets/icons/wallet.svg" alt="wallet" />
-              <span class="font-light text-sm">**** 3528</span>
+              <span class="font-light text-sm">Wallet (CopyCash)</span>
             </div>
             <p class="text-sm text-[#0E0D0D80]">Balance: $150.00</p>
           </div>
           <div id="toggle-switch-wallet"
-            class="relative inline-flex h-5 w-10 items-center rounded-full bg-gray-300 transition-colors focus:outline-none mt-1">
+            class="relative inline-flex h-5 w-10 items-center rounded-full bg-gray-300 transition-colors focus:outline-none mt-1 cursor-pointer">
             <span id="switch-knob-wallet"
               class="inline-block h-5 w-5 transform rounded-full bg-white shadow transition-transform"></span>
           </div>
@@ -67,13 +67,12 @@
       </div>
 
       <div class="px-5 py-8 text-center max-w-[450px] w-full">
-        <p class="underline">Deselect all items</p>
         <div class="flex items-center justify-between gap-2 mt-4">
           <div class="flex gap-2 items-center">
             <img src="./../assets/images/6.png" class="size-7" alt="6.png" />
             <p>Luna Fashion Store</p>
           </div>
-          <div class="border px-2 rounded-full">
+          <div class="border px-2 rounded-full clickable cursor-pointer">
             <a href="" target="_blank">
               <sup>$</sup>
               <span class="font-medium text-2xl">230</span>
@@ -83,7 +82,7 @@
         </div>
         <div class="flex justify-between items-center mt-3">
           <span class="text-[#0E0D0DB2]">Selected Items: 2</span>
-          <div class="flex items-center justify-center size-8">
+          <div class="flex items-center justify-center size-8 cursor-pointer clickable bg-[#0E0D0D0D] rounded-full">
             <img src="./../assets/icons/arrow-up.svg" alt="arrow-up" />
           </div>
         </div>
@@ -100,11 +99,11 @@
             <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Size: XS</button>
             <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Color: Red</button>
             <div class="flex gap-2">
-              <button class="bg-[#FAFAFA] rounded-full size-6 flex items-center justify-center cursor-pointer">
+              <button class="bg-[#FAFAFA] rounded-full size-6 flex items-center justify-center clickable cursor-pointer">
                 <img src="./../assets/icons/minus.svg" alt="minus" />
               </button>
               <span>1</span>
-              <button class="bg-black text-white rounded-full size-6 flex items-center justify-center cursor-pointer">
+              <button class="bg-black text-white rounded-full size-6 flex items-center justify-center clickable cursor-pointer">
                 <img src="./../assets/icons/plus-white.svg" alt="plus-white" />
               </button>
             </div>
@@ -116,7 +115,7 @@
               <sup>99</sup>
             </a>
             <span class="p-2 bg-[#F6888E4D] rounded-full">10% cash back</span>
-            <img src="./../assets/icons/delete.svg" class="mt-8 h-4" alt="delete" />
+            <img src="./../assets/icons/delete.svg" class="mt-8 h-4 clickable cursor-pointer" alt="delete" />
           </div>
         </div>
         <div class="flex gap-2 border-b border-[#00000033] py-4">
@@ -132,11 +131,11 @@
             <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Size: XS</button>
             <button class="text-xs text-nowrap px-4 py-2 w-fit rounded-full bg-[#FAFAFA]">Color: Red</button>
             <div class="flex gap-2">
-              <button class="bg-[#FAFAFA] rounded-full size-6 flex items-center justify-center cursor-pointer">
+              <button class="bg-[#FAFAFA] rounded-full size-6 flex items-center justify-center clickable cursor-pointer">
                 <img src="./../assets/icons/minus.svg" alt="minus" />
               </button>
               <span>1</span>
-              <button class="bg-black text-white rounded-full size-6 flex items-center justify-center cursor-pointer">
+              <button class="bg-black text-white rounded-full size-6 flex items-center justify-center clickable cursor-pointer">
                 <img src="./../assets/icons/plus-white.svg" alt="plus-white" />
               </button>
             </div>
@@ -148,16 +147,16 @@
               <sup>99</sup>
             </a>
             <span class="p-2 bg-[#F6888E4D] rounded-full">10% cash back</span>
-            <img src="./../assets/icons/delete.svg" class="mt-8 h-4" alt="delete" />
+            <img src="./../assets/icons/delete.svg" class="mt-8 h-4 clickable cursor-pointer" alt="delete" />
           </div>
         </div>
         <div class="flex items-center justify-between mt-4">
-          <p class="font-semibold">Shpping method</p>
-          <div class="size-7 flex items-center justify-center rounded-full bg-[#0E0D0D0D]">
+          <p class="font-semibold">Shipping method</p>
+          <div class="size-7 flex items-center justify-center rounded-full bg-[#0E0D0D0D] cursor-pointer">
             <img src="./../assets/icons/arrow-up.svg" alt="arrow-up" />
           </div>
         </div>
-        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2">
+        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2 cursor-pointer clickable">
           <div>
             <p class="flex gap-2 items-center">$6.00</p>
             <p class="text-sm text-[#0E0D0D80]">10-12 days</p>
@@ -166,7 +165,7 @@
             <img src="./../assets/icons/check-white.svg" alt="check-white" />
           </div>
         </button>
-        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2">
+        <button class="border bg-[#FAFAFA] rounded-full py-2 flex items-center justify-between px-6 w-full mt-2 cursor-pointer clickable">
           <div>
             <p class="flex gap-2 items-center">$6.00</p>
             <p class="text-sm text-[#0E0D0D80]">10-12 days</p>
@@ -216,12 +215,12 @@
         </div>
         <div class="flex justify-between items-center mt-2">
           <p>Selected Items: 1</p>
-          <div class="bg-[#0E0D0D0D] rounded-full flex items-center justify-center size-7">
+          <div class="bg-[#0E0D0D0D] rounded-full flex items-center justify-center size-7 cursor-pointer">
             <img src="./../assets/icons/arrow-bottom.svg" alt="arrow-bottom" />
           </div>
         </div>
 
-        <button class="flex justify-between items-center rounded-full bg-black text-white w-full h-12 px-4 my-6">
+        <button class="flex justify-between items-center rounded-full bg-black text-white w-full h-12 px-4 my-6 clickable cursor-pointer">
           <span>Checkout</span>
           <span>$687</span>
         </button>
@@ -273,6 +272,11 @@
     }
 
     setupToggle('toggle-switch-wallet', 'switch-knob-wallet');
+
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
   </script>
 </body>
 

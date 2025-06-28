@@ -38,12 +38,19 @@
           </p>
         </div>
 
-        <button class="rounded-full bg-black text-white py-3 w-full mt-4">
+        <button class="rounded-full bg-black text-white py-3 w-full mt-4 clickable cursor-pointer">
           View My Orders
         </button>
       </div>
     </div>
   </div>
+
+  <script>
+    const clickables = document.querySelectorAll('.clickable');
+    clickables.forEach(clickable => clickable.addEventListener('click', () => {
+      window.open('#', '_blank');
+    }))
+  </script>
 </body>
 
 </html>
