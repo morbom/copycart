@@ -94,7 +94,7 @@
           </div>
           <div class="flex gap-1 overflow-x-auto px-5">
             <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative">
-              <img src="./../assets/images/post1.jpg" class="object-cover w-48" alt="post1.jpg">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48" alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
               <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
                 +4 items
               </p>
@@ -129,7 +129,7 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-2 px-5">
             <div class="flex flex-col justify-between">
               <a href="" target="_blank" class="flex justify-center">
-                <img src="./../assets/images/product10.webp" class="object-cover h-48" alt="product10.webp" />
+                <img src="./../assets/images/closet.png" class="object-cover h-48" alt="closet.png" />
               </a>
               <p class="font-light leading-3.5 text-sm mt-2">Lorem ipsum dolor sit amet consectetur...</p>
               <a href="" target="_blank">
@@ -327,6 +327,29 @@
           targetPanel.classList.remove('hidden');
         }
       });
+    });
+
+    const postContainer = document.querySelector('div.flex.gap-1.overflow-x-auto.px-5');
+    postContainer.style.alignItems = 'center';
+
+    const postImages = document.querySelectorAll('div.flex.gap-1.overflow-x-auto.px-5 a.flex.min-w-36.min-h-48.relative');
+    postImages.forEach(imageContainer => {
+      if (imageContainer.children[0].naturalWidth > imageContainer.children[0].naturalHeight) {
+        imageContainer.style.width = '320px';
+        imageContainer.style.height = '180px';
+        imageContainer.children[0].style.width = '320px';
+        imageContainer.children[0].style.height = '180px';
+      } else {
+        imageContainer.style.width = '180px';
+        imageContainer.style.height = '320px';
+        imageContainer.children[0].style.width = '180px';
+        imageContainer.children[0].style.height = '320px';
+      }
+    });
+
+    const closetImages = document.querySelectorAll('div.grid.grid-cols-2.md\\:grid-cols-4.gap-2.px-5 div.flex.flex-col.justify-between a.flex.justify-center img');
+    closetImages.forEach(image => {
+      image.style.objectFit = 'contain';
     });
   </script>
 </body>
