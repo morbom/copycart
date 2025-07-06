@@ -111,6 +111,30 @@
                 +4 items
               </p>
             </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48" alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative">
+              <img src="./../assets/images/post2.jpg" class="object-cover w-48" alt="post2.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative">
+              <img src="./../assets/images/DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png" class="object-cover w-48" alt="DRHYIaem1DGbc_5WXfmc4w2mK94LrxgaUqmH5OUOfCuUA.png">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
+            <a href="./post-detail.html" class="flex min-w-36 min-h-48 relative">
+              <img src="./../assets/images/post2.jpg" class="object-cover w-48" alt="post2.jpg">
+              <p class="px-2 rounded-full absolute bottom-2 left-2 border border-white bg-white/40 backdrop-blur-md">
+                +4 items
+              </p>
+            </a>
           </div>
         </div>
 
@@ -329,19 +353,22 @@
       });
     });
 
-    const postContainer = document.querySelector('div.flex.gap-1.overflow-x-auto.px-5');
-    postContainer.style.alignItems = 'center';
-
     const postImages = document.querySelectorAll('div.flex.gap-1.overflow-x-auto.px-5 a.flex.min-w-36.min-h-48.relative');
     postImages.forEach(imageContainer => {
       if (imageContainer.children[0].naturalWidth > imageContainer.children[0].naturalHeight) {
         imageContainer.style.width = '320px';
-        imageContainer.style.height = '180px';
+        imageContainer.style.height = '320px';
+        imageContainer.style.minWidth = '320px';
+        imageContainer.style.minHeight = '320px';
+        imageContainer.style.display = 'flex';
+        imageContainer.style.alignItems = 'center';
         imageContainer.children[0].style.width = '320px';
         imageContainer.children[0].style.height = '180px';
       } else {
         imageContainer.style.width = '180px';
         imageContainer.style.height = '320px';
+        imageContainer.style.minWidth = '180px';
+        imageContainer.style.minHeight = '320px';
         imageContainer.children[0].style.width = '180px';
         imageContainer.children[0].style.height = '320px';
       }
