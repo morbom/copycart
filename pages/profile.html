@@ -366,25 +366,26 @@
     function adjustImage(imageContainer, img) {
       if (img.naturalWidth > img.naturalHeight) {
         imageContainer.style.width = '320px';
-        imageContainer.style.height = '320px';
+        imageContainer.style.height = '180px';
+        imageContainer.style.marginRight = '12px';
         imageContainer.style.backgroundColor = '#0E0D0D20';
         imageContainer.style.minWidth = '320px';
-        imageContainer.style.minHeight = '320px';
-        imageContainer.style.marginRight = '20px';
+        imageContainer.style.minHeight = '180px';
         imageContainer.style.display = 'flex';
         imageContainer.style.alignItems = 'center';
         imageContainer.children[0].style.width = '320px';
         imageContainer.children[0].style.height = '180px';
       } else {
-        imageContainer.style.width = '180px';
-        imageContainer.style.height = '320px';
+        imageContainer.style.width = '100px';
+        imageContainer.style.height = '180px';
+        imageContainer.style.marginRight = '12px';
         imageContainer.style.display = 'flex';
+        imageContainer.style.alignItems = 'center';
         imageContainer.style.justifyContent = 'center';
-        imageContainer.style.marginRight = '20px';
-        imageContainer.style.minWidth = '180px';
-        imageContainer.style.minHeight = '320px';
-        imageContainer.children[0].style.width = '180px';
-        imageContainer.children[0].style.height = '320px';
+        imageContainer.style.minWidth = '100px';
+        imageContainer.style.minHeight = '180px';
+        imageContainer.children[0].style.width = '100px';
+        imageContainer.children[0].style.height = '180px';
       }
     }
 
