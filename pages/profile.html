@@ -441,8 +441,9 @@
 
     const postsContainer = document.querySelector('div#Posts > div');
     postsContainer.style.display = 'flex';
+    postsContainer.style.justifyContent = 'center';
     postsContainer.style.flexWrap = 'wrap';
-    postsContainer.style.gap = '12px';
+    postsContainer.style.gap = '4px';
 
     const posts = document.querySelectorAll('div#Posts a');
     posts.forEach(post => {
