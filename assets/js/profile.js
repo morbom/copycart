@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const postContainer = document.querySelector('div.flex.gap-1.overflow-x-auto.px-5');
-  postContainer.style.maxWidth = '1080px';
+  postContainer.style.maxWidth = '72vw';
   postContainer.style.marginLeft = 'auto';
   postContainer.style.marginRight = 'auto';
 

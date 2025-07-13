@@ -2,3 +2,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+#Closet img {
+  object-fit: scale-down;
+}
